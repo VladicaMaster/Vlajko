@@ -1,0 +1,28 @@
+table{
+border:2px solid black; 
+width:30%;
+background-color:#FF7F50;
+}
+td{
+padding:15px;
+height:100%;
+color:white;
+}
+input{
+width:100%;
+height:200%;
+background-color:white;
+}
+button{
+width:100%;
+height:200%;
+}
+button:hover{
+color: #8AC007;
+font-weight:bold;
+}
+h1{
+	color: #FF7F50;
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+}
