@@ -1,0 +1,4 @@
+{
+  "time": [{"easy": 60},{"medium":30},{"hard":15}], "img":[{"url":"karte/jelka.png", "val": "jelka"},{"url":"karte/patuljak.png","val": "patuljak"},{"url":"karte/sanke.png", "val": "sanke"},{"url":"karte/pigvin.png", "val": "pigvin"},{"url":"karte/carapa.png", "val": "carapa"},{"url":"karte/irvas.png", "val": "irvas"},{"url":"karte/pahulja.png", "val": "pahulja"},{"url":"karte/dedamraz.png", "val": "dedamraz"}]
+  
+}
