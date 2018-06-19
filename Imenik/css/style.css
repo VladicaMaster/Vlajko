@@ -1,0 +1,84 @@
+body{
+  margin:0;
+  padding: 0;
+  background-color: #D8BFD8;
+}
+h1,h2{
+	font-family: "Courier New", Courier, monospace;
+	padding-top: 16px;
+	color: #D8BFD8
+}
+p{
+	font-family: "Courier New", Courier, monospace;
+	color: #fff;
+}
+form{
+	
+	margin: 32px;
+	padding: 16px;
+}
+
+input{
+	
+	width: 300px;
+	height: 18px;
+	 border-radius: 5px;
+	 background: linear-gradient(white, #D3D3D3);
+	 opacity: 0.8;
+	 box-shadow: 0 4px 4px 3px #555;
+	 font-size: 16px;
+	 text-align: center;
+
+}
+button {
+    display: inline-block;
+    zoom: 1;
+    padding: 6px 20px;
+        
+    cursor: pointer;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #555;
+    background: linear-gradient(white, #D3D3D3);
+    height: 30px;
+
+}
+label{
+	height: 35px;
+	float: left;
+	font-family: "Courier New", Courier, monospace;
+	color: #fff;
+	font-size: 18px;
+}
+.butt{
+	margin-bottom: 18px;
+}
+#found{
+	float: left;
+	margin-left: 18px;
+	font-size: 16px;
+}
+#content{
+	background-color: #32CD32;
+	width: 600px;
+	height: 800px;
+	margin: 0 auto;
+	border-radius: 24px;
+}
+.fields{
+	float: left;
+	margin-bottom: 24px;
+}
+#name1{
+	padding-right: 130px;
+}
+#lastName1{
+	padding-right: 75px;
+}
+#search{
+	margin-bottom: 24px;
+}

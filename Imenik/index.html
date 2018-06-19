@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Imenik</title>
+        <link rel="StyleSheet" href="css/style.css" type="text/css"/>
+    </head>
+
+    <body onload="read()">
+        <div id="content" align="center">
+            <h1 class="bigTitle">PHONE BOOK</h1>
+            <div class="formContent" align="center">
+                <form class="form">
+                    <div class="fields">
+                        <label for="name" id="name1" >Name:</label>
+                        <input id="name" placeholder="Name"  ></input>
+                    </div>
+                    <div class="fields">
+                        <label for="Last Name" id="lastName1" >Last Name:</label>
+                        <input id="lastName" placeholder="Last Name" required type="text" ></input>
+                    </div>
+                    <div class="fields">
+                        <label for="number" id="number" >Telephone number:</label>
+                        <input id="phone" placeholder="Phone" ></input>
+                    </div>
+                   
+                    <div class="butt" >
+                        <button type="button" class="submit" id="submit" onclick="setBook()">Add</button>
+                        <button type="button"  onclick="clearDatebase()">Clear Phonebook</button>
+                    </div>
+                     <div id="search">
+                     <input type="text" id="searching" placeholder="Search">
+                    <button type="button" onclick="search()">Search</button>
+                </div>
+                <button type="button" onclick="printDatebase()">Print</button>
+                </form>
+               <div id="found">
+                    <p id="note"></p>
+                </div>
+                <h2>List of entries</h2>
+
+            </div>
+            
+        </div>
+
+        
+
+        <script language="JavaScript" src="js/appi.js" ></script>
+
+    </body>
+
+</html>
