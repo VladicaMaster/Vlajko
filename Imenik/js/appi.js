@@ -49,7 +49,7 @@ function clearDatebase(){
 
   localStorage.clear();
 
-  printDatebase();
+  document.getElementById('note').innerHTML="";
 }
     
 function search(){
