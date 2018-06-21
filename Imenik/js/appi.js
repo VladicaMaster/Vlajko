@@ -48,6 +48,8 @@ function setBook(){
 function clearDatebase(){
 
   localStorage.clear();
+
+  printDatebase();
 }
     
 function search(){
@@ -97,7 +99,7 @@ var note = document.getElementById('note');
 note.innerHTML = "";
  
 for(var i=0; i<datebase.length; i++){
-  document.getElementById('note').innerHTML+=(i+1) +' '+ datebase[i].fname+" "+ datebase[i].last_name+" "+ datebase[i].phone+'<button type="button"  value="'+datebase[i].last_name+'" onclick="deleteEntry(this.value)">Delete</button><BR>';
+  document.getElementById('note').innerHTML+=(i+1) +' '+ datebase[i].fname+" "+ datebase[i].last_name+" "+ datebase[i].phone+'<button type="button"  value="'+datebase[i].phone+'" onclick="deleteEntry(this.value)">Delete</button><BR>';
 }
 
 }
@@ -108,7 +110,7 @@ function deleteEntry(value){
     var datebase= JSON.parse(localStorage.getItem('data'));
 
     for(var i=0; i<datebase.length; i++){
-      if(value == datebase[i].last_name){
+      if(value == datebase[i].phone){
         datebase.splice(i, 1);
         clearDatebase();
         localStorage.setItem('data',JSON.stringify(datebase)); 
