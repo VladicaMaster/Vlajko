@@ -97,7 +97,7 @@ label{
 	margin-top: 20px;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 700px)
 {
 	.fields{
 		display: block;
