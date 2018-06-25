@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> Imenik</title>
+        <title>PhoneBook</title>
         <link rel="StyleSheet" href="css/style.css" type="text/css"/>
     </head>
 
@@ -28,14 +28,17 @@
                         <button type="button" class="submit" id="submit" onclick="setBook()">Add to Phone Book</button>
                         </div>
                         <div id="butt1">
-                        <button type="button"  onclick="clearDatebase()">Clear Phone Book</button>
+                        <button type="button"  onclick="clearDatebase()">Clear Phonebook</button>
                         </div>
+                        <div id="print">
+                         <button type="button" onclick="printDatebase()">Print Phone Book</button>
+                         </div>
                     </div>
                      <div id="search">
                      <input type="text" id="searching" placeholder="Search">
                     <button type="button" onclick="search()">Search</button>
                 </div>
-                <button type="button" onclick="printDatebase()">Print Phone Book</button>
+               
                  <h2>List of entries</h2>
                      <div id="found" >
                     <p id="note" align="right"></p>
