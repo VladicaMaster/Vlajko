@@ -97,7 +97,7 @@ label{
 	margin-top: 20px;
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 600px)
 {
 	.fields{
 		display: block;
@@ -105,7 +105,7 @@ label{
 
 	#content{
 		width: 100%;
-		background:#B8860B;
+		
 	}
 	input{
 		width: 100%;
