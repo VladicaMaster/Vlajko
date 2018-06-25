@@ -79,6 +79,7 @@ label{
 .fields{
 	float: left;
 	margin-bottom: 24px;
+	display: inline-block;
 }
 #name1{
 	padding-right: 130px;
@@ -91,4 +92,35 @@ label{
 }
 #search input{
 	width: 230px;
+}
+#print{
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 500px)
+{
+	.fields{
+		display: block;
+	}
+
+	#content{
+		width: 100%;
+	}
+	input{
+		width: 100%;
+	}
+	button{
+		width: 70%;
+	}
+	#search button{
+		width: 55%;
+		margin-top: 25px;
+	}
+	#content{
+		height: 1000px;
+	}
+	#note{
+		width: 70%;
+		float: left;
+	}
 }
