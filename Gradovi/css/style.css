@@ -1,0 +1,61 @@
+html, body, header, footer, div, p, a, ul, li, table, td {
+    margin: 0;
+    padding: 0;
+}
+body{
+	width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+h1 {
+	font-size: 50px;
+	color:		#D3D3D3;
+	text-align: center;
+	font-family: Andale Mono, monospace
+}
+
+p{
+	color:	#7FFF00;
+}
+input{
+	width: 300px;
+	height: 30px;
+	 border-radius: 5px;
+	 background: linear-gradient(white, #D3D3D3);
+	 opacity: 0.8;
+	 box-shadow: 0 4px 4px 3px #555;
+	 font-size: 18px;
+	 text-align: center;
+}
+button {
+    display: inline-block;
+    zoom: 1;
+    padding: 6px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #555;
+    background: linear-gradient(white, #D3D3D3);
+    height: 30px;
+
+}
+span{
+	color: #FF8C00;
+}
+#set p{
+	text-align: left;
+	width: 360px;
+	font-family: Andale Mono, monospace;
+	font-size: 24px;
+}
+#set{
+	margin: 40px;
+}
+
