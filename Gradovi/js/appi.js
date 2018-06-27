@@ -8,12 +8,12 @@ $('#butt').click(function(){
 			dataType:'JSON',
 			success:function(data){
 
-				$('#city').html(data.name);
-				$('#Temp').html(data.main.temp).append(' C');
-				$('#coo').html('lon:'+data.coord.lon).append(' lat:'+data.coord.lat);
+				$('#city').fadeIn().html(data.name).hide().fadeIn(2000);
+				$('#Temp').html(data.main.temp).append(' C').hide().fadeIn(2000);
+				$('#coo').html('lon:'+data.coord.lon).append(' lat:'+data.coord.lat).hide().fadeIn(2000);
 				//alert(data.sys.sunset);
-				$('#vreme').html(data.visibility + ' m');
-				$('#uslovi').html(data.weather[0].description);
+				$('#vreme').html(data.visibility + ' m').hide().fadeIn(2000);
+				$('#uslovi').html(data.weather[0].description).hide().fadeIn(2000);
 			/*
 				var pocetak = data.sys.sunrise;
 				var kraj= data.sys.sunset;
