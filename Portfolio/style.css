@@ -27,6 +27,18 @@ header h1{
 img{
 	width: 100%;
 }
+.front{
+	 background-image: url("images/code.png");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #text{
 	position: absolute;
 	top: 40%;
@@ -170,17 +182,14 @@ button {
 }
 
 @media screen and (max-width : 500px){
-	#text{
-		position: relative;
-		bottom: 50px;
-	}
+	
 	#text h1{
 	font-size: 35px;
 	color: #FAEBD7;
 }
 	#text h2{
 	margin-top: 35px;	
-	color: #009999;
+	
 	font-size: 20px;
 }
 	.container  {
