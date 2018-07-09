@@ -3,17 +3,22 @@ html, body, header, footer, div, p, a, ul, li, table, td {
     padding: 0;
 }
 body{
-	width: auto;
-    background-size: cover;
+	 background-image: url(../images/vreme.jpg);
+
+    /* Full height */
+    height: 700px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    background-size: cover;
 }
 
 h1 {
 	font-size: 50px;
 	color:		#D3D3D3;
 	text-align: center;
-	font-family: Andale Mono, monospace
+	font-family: 'Raleway', sans-serif;
 }
 
 p{
@@ -52,10 +57,23 @@ span{
 #set p{
 	text-align: left;
 	width: 360px;
-	font-family: Andale Mono, monospace;
+	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 }
 #set{
 	margin: 40px;
 }
 
+@media screen and (max-width: 500px){
+	body{
+	 background-image: url(../images/vreme3.jpg);
+
+    /* Full height */
+    height: 700px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
