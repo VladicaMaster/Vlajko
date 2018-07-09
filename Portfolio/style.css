@@ -182,7 +182,9 @@ button {
 }
 
 @media screen and (max-width : 500px){
-	
+	.front{
+		background-attachment: scroll;
+	}
 	#text h1{
 	font-size: 35px;
 	color: #FAEBD7;
