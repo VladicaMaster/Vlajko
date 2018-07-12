@@ -131,6 +131,34 @@ button {
     height: 40px;
 
 }
+li{
+	text-align: left;
+	font-family:  'Playfair Display', serif
+}
+.eduexp{
+  display: inline-block; 
+  width: 420px;
+  margin:22px;
+  position: relative;
+  height: 770px;
+  color:#009999;  
+  border-radius: 20px;
+  border:1px solid #009999;
+  background-color: #F5F5DC
+	
+}
+.eduexp:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+.eduexp h2{
+	text-align: center;
+
+}
+#edu li{
+	padding-bottom: 120.5px;
+}
+
+}
 .container2 img{
 	border-radius: 22px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
