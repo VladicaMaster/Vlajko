@@ -137,10 +137,10 @@ li{
 }
 .eduexp{
   display: inline-block; 
-  width: 420px;
-  margin:22px;
+  width: 380px;
+  margin:20px;
   position: relative;
-  height: 770px;
+  height: 840px;
   color:#009999;  
   border-radius: 20px;
   border:1px solid #009999;
@@ -155,7 +155,7 @@ li{
 
 }
 #edu li{
-	padding-bottom: 120.5px;
+	padding-bottom: 130.5px;
 }
 
 }
