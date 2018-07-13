@@ -93,7 +93,7 @@ img{
 
 .container2 {
   display: inline-block; 
-  width: 250px;
+  width: 230px;
   height: 250px;
   margin:12px;
  position: relative;
@@ -107,9 +107,7 @@ img{
 #work h1{
 	text-align: center;
 }
-.container2{
-	position: relative;
-}
+
 
 .container2 :hover{
 	color: 		#C0C0C0;
@@ -144,7 +142,7 @@ li{
   width: 380px;
   margin:20px;
   position: relative;
-  height: 840px;
+  height: 850px;
   color:#009999;  
   border-radius: 20px;
   border:1px solid #009999;
@@ -159,8 +157,8 @@ li{
 
 }
 #edu li{
-	padding-bottom: 130px;
-	font-size: 16.3px;
+	padding-bottom: 134px;
+	font-size: 17px;
 }
 
 
@@ -168,8 +166,8 @@ li{
 	border-radius: 22px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 	position: relative;
-  max-width: 100%;
-  -webkit-transform: scale(1);
+    max-width: 100%;
+    -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
@@ -215,7 +213,8 @@ li{
 }
 
 @media screen and (max-width : 500px){
-	.front{
+
+    .front{
 		background-attachment: scroll;
 	}
 	#text h1{
@@ -230,13 +229,15 @@ li{
 	.container  {
  
   width: 350px;
-  
   margin:0px;
- position: relative;
+  position: relative;
  
 }
 	.container p{
 	text-align: left;
+}
+.container2{
+	width: 270px;
 }
 .container3{
 	width: 300px;
@@ -244,5 +245,8 @@ li{
 .eduexp{
 	width: 95%;
 	margin: 5px;
+}
+#aboutme{
+	margin-top: -150px;
 }
 }
