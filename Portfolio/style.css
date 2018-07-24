@@ -5,33 +5,68 @@ body{
 }
 h1,h2{
 	font-family: 'Tajawal', sans-serif;
-	text-align: left;
+	text-align: right;
 	color:#009999;
 	
 }
 a{
 	font-family: 'Tajawal', sans-serif;
 	text-decoration: none;
+	color:#009999;
 }
+
 header{
 	width: 100%;
-	overflow: hidden;
-	
+	 background-color: 	#FFF8DC;
+	height: 50px;
+	z-index: 1;
+	border-bottom: 1px solid #009999;
+	position: fixed;
 	top:0;
-	z-index: 100;
+	
 }
 header h1{
-	margin-left: 36px;
+	margin-right: 36px;
 }
 
 img{
 	width: 100%;
 }
+button {
+    display: inline-block;
+    zoom: 1;
+    padding: 6px 20px;
+    opacity: 0.9;    
+    cursor: pointer;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #555;
+    background: linear-gradient(white, #009999);
+    height: 40px;
+
+}
+header ul{
+	text-align: right;
+	margin-top: -20px;
+		
+}
+header li{
+	padding-right: 20px;
+	}
+li{
+	color:#009999;
+	font-family:'Tajawal', sans-serif;
+	display: inline-block;
+}
 .front{
 	 background-image: url("images/code.png");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 600px; 
 
     /* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -116,33 +151,13 @@ img{
 #cv{
 	margin: 100px;
 }
-button {
-    display: inline-block;
-    zoom: 1;
-    padding: 6px 20px;
-    opacity: 0.9;    
-    cursor: pointer;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    overflow: visible;
-    font: bold 13px arial, helvetica, sans-serif;
-    text-decoration: none;
-    white-space: nowrap;
-    color: #555;
-    background: linear-gradient(white, #009999);
-    height: 40px;
 
-}
-li{
-	text-align: left;
-	font-family:'Tajawal', sans-serif;
-}
 .eduexp{
   display: inline-block; 
-  width: 380px;
+  width: 450px;
   margin:20px;
   position: relative;
-  height: 850px;
+  height: 450px;
   color:#009999;  
   border-radius: 20px;
   border:1px solid #009999;
@@ -157,7 +172,7 @@ li{
 
 }
 #edu li{
-	padding-bottom: 134px;
+	padding-bottom: 34px;
 	font-size: 17px;
 }
 
