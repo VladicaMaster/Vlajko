@@ -1,11 +1,11 @@
 body{
   margin:0;
   padding: 0;
-  background-color: 	#FFF8DC;
+  background-color: #FFF8DC;
 }
 h1,h2{
 	font-family: 'Tajawal', sans-serif;
-	text-align: right;
+	
 	color:#009999;
 	
 }
@@ -62,6 +62,39 @@ li{
 	font-family:'Tajawal', sans-serif;
 	display: inline-block;
 }
+div #but {
+    width: 35px;
+    height: 2px;
+    background-color: #00FFFF;
+    margin: 4px ;
+
+    border-radius: 24px;
+}
+ input[type=checkbox]{
+    display: none;
+}
+header a:hover{
+	color: #87CEEB;
+}
+.active {
+	color: #A52A2A;
+}
+
+#menu{
+  z-index: 1;
+}
+
+.show-menu {
+    font-family:'Tajawal', sans-serif;
+    text-decoration: none;
+    color: #FF0000;
+    background: none;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    margin-top: 10px;
+}
+
 .front{
 	 background-image: url("images/code.png");
 
@@ -89,8 +122,14 @@ li{
 	text-align: center;
 }
 #about p{
-	font-family: 'Gaegu', cursive;
-	font-size: 21px;
+	
+	font-size: 19px;
+}
+#about{
+	margin-top: 70px;
+}
+#aboutme{
+	margin-top: -100px;
 }
 #text h2{
 	color: #FAEBD7;
@@ -117,7 +156,10 @@ li{
 #tech h1{
 	text-align: center;
 	}
-	.container1 {
+#tech{
+	margin-top: 70px;
+}
+.container1 {
   display: inline-block; 
   width: 150px;
   height: 150px;
@@ -151,13 +193,16 @@ li{
 #cv{
 	margin: 100px;
 }
+#eduexp{
+	margin-top: 70px;
+}
 
 .eduexp{
   display: inline-block; 
   width: 450px;
   margin:20px;
   position: relative;
-  height: 450px;
+  height: 650px;
   color:#009999;  
   border-radius: 20px;
   border:1px solid #009999;
@@ -172,7 +217,7 @@ li{
 
 }
 #edu li{
-	padding-bottom: 34px;
+	padding: 34px;
 	font-size: 17px;
 }
 
@@ -228,7 +273,10 @@ li{
 }
 
 @media screen and (max-width : 500px){
-
+header{
+	border: none;
+	background: none;
+}
     .front{
 		background-attachment: scroll;
 	}
@@ -252,7 +300,7 @@ li{
 	text-align: left;
 }
 .container2{
-	width: 270px;
+	width: 90%;
 }
 .container3{
 	width: 300px;
@@ -261,7 +309,39 @@ li{
 	width: 95%;
 	margin: 5px;
 }
-#aboutme{
-	margin-top: -150px;
+
+.show-menu {
+        display:block;
+        width: 45px;
+        float: right;
+        border: 2px solid #00FFFF;
+        border-radius: 6px;
+        margin-right: 20px;
+        margin-top: 20px;
+        height: 20px;
+      
+    }
+
+   .allmenu{
+      width: 90%;
+     height: auto;
+      margin-bottom: 15px;
+      opacity: 0.95;
+    }
+    input[type=checkbox]~ #menu li{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu li{
+    display: block;
+}
+#menu{
+	background-color: #F5F5DC;
+	border-radius: 7px;
+	
+}
+#menu li{
+	text-align: left;
+	padding-bottom: 7px;
 }
 }
