@@ -121,6 +121,12 @@ button {
   background-color:#8FBC8F;
 }
 
+@media screen and (max-width: 500px){
+  #kvadrat{
+    width: 100%;
+  }
+}
+
 
 
 
