@@ -59,3 +59,8 @@ $(window).scroll(function() {
 $(document).ready(function(){
   $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
 })
+
+document.getElementById("page").onmousemove = function(e) {
+    document.getElementById("magnify").style.top = e.pageY*1 + "px";
+    document.getElementById("magnify").style.left = e.pageX*1 + "px";
+}

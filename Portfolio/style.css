@@ -3,7 +3,7 @@ body{
   padding: 0;
   background-color: #FFF8DC;
 }
-h1,h2{
+h1,h2,p{
 	font-family: 'Tajawal', sans-serif;
 	
 	color:#009999;
@@ -94,7 +94,9 @@ header a:hover{
     display: none;
     margin-top: 10px;
 }
-
+.front img{
+	width: 100%
+}
 .front{
 	 background-image: url("images/code.png");
 
@@ -106,17 +108,43 @@ header a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    width:100%;  
+   
+    overflow:hidden;
 }
+
+.front, #magnify { background:url("images/code.png") center center no-repeat;
+ position:absolute;
+  top:0px; 
+  left:0px; 
+  background-attachment:fixed;
+}
+  
+#magnify {
+ z-index:9; 
+ width:400px; 
+ height:400px; 
+ border:none; 
+ border-radius:200px; 
+ box-shadow:inset 0px 0px 30px 20px rgba(0,0,0,0.1), 0px 0px 10px 0px rgba(0,0,0,.6); 
+ margin:-150px; 
+ border:10px solid #FFF; 
+ background-size:1100px; 
+ top:50%;
+  left:50%; 
+  overflow : hidden; } 
+
+
+#magnify:active { background-size:1500px; }  
 #text{
-	position: absolute;
-	top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%
+	text-align: center;
+    width: 100%
 }
 #text h1{
-	font-size: 70px;
-	color: #FAEBD7
+	font-size: 60px;
+	
+	color: 	#DCDCDC
 }
 #about h1{
 	text-align: center;
@@ -129,30 +157,40 @@ header a:hover{
 	margin-top: 70px;
 }
 #aboutme{
-	margin-top: -100px;
+	width: 90%
 }
 #text h2{
 	color: #FAEBD7;
 	font-size: 35px;
 }
 .container  {
-  display: inline-block; 
-  width: 420px;
-  height: 420px;
-  margin:22px;
- position: relative;
+ 
+  width: 100%;
+  height: 220px;
+
+  background-image: url("images/profil.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
  
 }
+
+
+
 .container img{
 	border-radius: 22px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-	width: 100%
+	
 }
-.container p{
-	font-family: 'Tajawal', sans-serif;
-	color:#009999;
-	font-size: 18px;
-}
+
 #tech h1{
 	text-align: center;
 	}
@@ -179,7 +217,7 @@ header a:hover{
 #work{
 	width: 65%;
 	margin: 0 auto;
-	margin-top: 150px;
+	margin-top: 700px;
 }
 #work h1{
 	text-align: center;
@@ -289,16 +327,10 @@ header{
 	
 	font-size: 20px;
 }
-	.container  {
- 
-  width: 350px;
-  margin:0px;
-  position: relative;
- 
-}
-	.container p{
+#aboutme{
 	text-align: left;
-}
+}	
+	
 .container2{
 	width: 90%;
 }
