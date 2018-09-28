@@ -103,7 +103,7 @@ footer{
     text-align: center;
     line-height: 60px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-   
+  
  
     letter-spacing: 0.75px;
     color: 	#433317;
@@ -132,6 +132,7 @@ div #but {
 }
 input[type=checkbox]{
     display: none;
+    
 }
 
 input[type=checkbox]:checked ~ #menu{
@@ -144,28 +145,31 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 #description1{
-	width: 369px;
-	margin-right: 11px;
+	width: 30.4%;
+	margin-right: 9px;
 	position: relative;
 }
 #description1 img{
 	width: 100%
 }
-.description2 {
-	width: 183px;
-	margin-bottom: 12px;
-	margin-right: 11px;
+#description2 {
+	width: 15.1%;
+	margin-bottom: 10px;
+	margin-right: 9px;
 	position: relative;
 }
-.description2 img{
+#description2 img{
 	width: 100%;
 
+}
+.one{
+	margin-bottom: 11px;
 }
 .description{
 	display: inline-block;
 }
 #description3{
-	width: 631px;
+	width: 52.1%;
 	position: relative;
 }
 #description3 img{
@@ -174,62 +178,80 @@ input[type=checkbox]:checked ~ #menu{
 }
 #description4{
 	position: relative;
-	width: 563px;
-	margin-right: 11px;
+	width: 46.382%;
+	margin-right: 10px;
+	margin-left: 1.5px;
 
 }
 
 #description5{
-	width: 366px;
+	width: 30.1%;
 	position: relative;
 	margin-right: 10px;
+	
 }
 #description5 img{
-	width: 100%;
+	width: 100.2%;
 }
 #description6 {
 	position: relative;
-	width: 256px;
+	width: 21.09%;
 }
 #description6 img{
-	width: 100%;
+	width: 100.2%;
 }
 img.expand{
-	width: 565px;
+	width: 100%;
 }
 
 .middle {
  
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 35%;
  
   text-align: center;
 }
-#description6 .middle{
-	opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 6%;
- 
-  text-align: center;
+.text h1{
+	font-size: 25px;
+	text-align: left;
 }
+#description5 .middle{
+	
+  top: 40%;
+  left: 30%;
+ 
+}
+
 .one .middle{
 	 opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 5%;
+  top: 30%;
+  left: -5%;
  
   text-align: center;
 }
 .two .middle{
-	 opacity: 0;
-  position: absolute;
-  bottom: 50%;
+	top: 65%;
+    left: 5%;
+ 
+}
+#description3 .middle{
+	top:40%;
+}
+#description4 .middle{
+	top: 35%;
+	left: 25%
+}
+#description6 .middle {
+
+  top: 35%;
   left: 10%;
  
-  text-align: center;
+}
+#description6 .middle h1{
+	text-align: center;
 }
 .one{
 	position: relative;
@@ -465,6 +487,46 @@ img.expand{
    	width: 100%;
    	height: 350px;
    }
+
+ .gallery{
+ 	width: 94%;
+ 	margin: auto;
+ }
+ .gallery-wraper{
+ 	width: 30%;
+ 	margin: 15px;
+ 	margin-right: 15px;
+ 	display: inline-block;
+ }
+  .gallery-wraper img{
+ 	width: 100%;
+ }
+
+ #btn {
+ 	width: 90;
+
+ }
+ #btn-prev{
+ 	margin-right: 80%;
+ }
+ #btn button{
+ 	padding: 12px;
+ 	color: white;
+ 	background:#d5ab5d;
+ 	font-family: "Copperplate-Bol";
+ 	font-size: 18px;
+ 	font-weight: 800;
+ 	cursor: pointer;
+ 	border: none;
+ }
+.gallbut{
+	display: inline-block;
+}
+
+ #btn button:hover{
+ 	background-color: gray;
+ }
+
 @media screen and (max-width : 761px){
 p {
 	font-size: 12px;
@@ -500,6 +562,7 @@ h2{
     }
 #menu{
 	background-color:  #d5ab5d;
+	margin-top: 30px;
 }
 #menu li{
 	text-align: left;
@@ -517,7 +580,8 @@ h2{
    .allmenu{
       width: 100%;
      height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
+
       opacity: 0.95;
 
     }
@@ -532,13 +596,14 @@ input[type=checkbox]:checked ~ #menu li{
         display:block;
         width: 45px;
         float: right;
-        
+       
         height: 20px;
       
     }
 
   #description1 , #description3, .one, #description2, .two, #description4, #description5, #description6{
   	width: 100%;
+  	margin-bottom: 10px;
   }
 
 #description4 .middle{
@@ -550,12 +615,12 @@ left: 30%;
 }
 .one .middle{
 ;
-  left: 35%;
- 
+  left: 30%;
+ top:40%;
 }
 .two .middle{
-	
-  left: 40%;
+  top:40%;
+  left: 35%;
 
 }
  img.expand{
@@ -582,6 +647,12 @@ footer{
 	width: 60%;
 
 }
+.gallery-wraper{
+	width: 95%;
+}
+ #btn-prev{
+ 	margin-right: 50%;
+ }
 
 }
 	
