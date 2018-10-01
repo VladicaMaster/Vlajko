@@ -116,19 +116,26 @@ footer{
     font-family:inherit;
     text-decoration: none;
     color: #FF0000;
-    background:  #d5ab5d;
+    background:  none;
     text-align: center;
     padding: 10px 0;
     display: none;
     margin-bottom: 50px;
 }
+.show-menu:hover{
+	background-color: #d5ab5d;
+	
+}
 div #but {
-    width: 35px;
+    width: 30px;
     height: 2px;
-    background-color: #f5f0e6;
+    background-color: #d5ab5d;
     margin: 4px ;
 
    
+}
+#but:hover{
+	background-color: white;
 }
 input[type=checkbox]{
     display: none;
@@ -543,26 +550,31 @@ h1{
 h2{
 	font-size: 20px;
 }
-.lang{
-	
+
+
+#header img{
+	width: 50%;
 }
 .show-menu {
-        display:block;
-        width: 45px;
+       display:block;
+       width: 40px;
        position: absolute;
-       top: 60px;
-       right: 30px;
+       top: 10%;
+       right: 2%;
        float: right;
-      
-        margin-right: 20px;
-        margin-bottom: 20px;
-        height: 25px;
-
-      
-    }
+       margin-right: 20px;
+       height: 25px;
+  }
+      #butbackground{
+      	position: relative;
+      	width: 100%;
+      	background-color: #f8f8f8;
+      	height: 50px;
+      	
+      }
 #menu{
 	background-color:  #d5ab5d;
-	margin-top: 30px;
+	
 }
 #menu li{
 	text-align: left;
@@ -580,7 +592,7 @@ h2{
    .allmenu{
       width: 100%;
      height: auto;
-      margin-bottom: 30px;
+     
 
       opacity: 0.95;
 
@@ -594,7 +606,7 @@ input[type=checkbox]:checked ~ #menu li{
 }
 .show-menu {
         display:block;
-        width: 45px;
+        width: 40px;
         float: right;
        
         height: 20px;
