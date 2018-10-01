@@ -15,9 +15,10 @@
 <div id="header"><a href="index.html"><img src="images/logo-en.svg"></a>
  
 </div>
+<!--
 <div class="allmenu" align="center">
  <div id="butbackground">
-<label for="show-menu" class="show-menu" valign="middle">
+<label for="show-menu" class="show-menu" >
        
                                         <div id="but"></div>
                                         <div id="but"></div>
@@ -48,10 +49,26 @@
          <li>
             <a href="contact.html">KONTAKT</a>
          </li>
-
+         <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a></li>
     </ul>
     </div>
+-->
 
+<div class="topnav" id="myTopnav" align="center">
+  <a href="program.html">PROGRAM</a>
+  <a href="ball.html">BALL</a> 
+  <a href="ball-open.html">OPENING</a>
+  <a href="prices.html">PRICES</a>
+  <a href="partners.html">PARTNERS</a>
+  <a href="viena.html">VIENA</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="contact.html">KONTAKT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 <div id="front" align="center">
     <div id="description1" class="description">
     <a href="ball.html"><img src="images/1.jpg"></a> <div class="middle">
@@ -135,5 +152,16 @@ The Austrian Ball preserves the tradition of the Viennese Ball. The Ball, held a
 </div>
 
 </footer>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>

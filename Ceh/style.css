@@ -75,57 +75,8 @@ footer{
 	
 }
 
-.allmenu{
-  width: 90%;
-  margin: 0 auto;
 
 
-}
-#menu  li a:hover{
-	color: #d5ab5d;
-	text-decoration: underline;
-}
-.allmenu ul{
-	
-	background-color: 	#f5f0e6;
-	margin-bottom: 15px;
-
-}
-.allmenu li{
-	font-size: 18px;
-	display:inline-block;
-	margin-right: 55px;
-}
-
-.allmenu li a {
-    display:inline-block;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
- 
-    letter-spacing: 0.75px;
-    color: 	#433317;
-   
-    text-decoration: none;
-
-}
-
-.show-menu {
-    font-family:inherit;
-    text-decoration: none;
-    color: #FF0000;
-    background:  none;
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-    margin-bottom: 50px;
-}
-.show-menu:hover{
-	background-color: #d5ab5d;
-	
-}
 div #but {
     width: 30px;
     height: 2px;
@@ -134,9 +85,7 @@ div #but {
 
    
 }
-#but:hover{
-	background-color: white;
-}
+
 input[type=checkbox]{
     display: none;
     
@@ -145,6 +94,7 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+
 #front{
 	width: 90%;
 	margin: auto;
@@ -186,8 +136,8 @@ input[type=checkbox]:checked ~ #menu{
 #description4{
 	position: relative;
 	width: 46.382%;
-	margin-right: 10px;
-	margin-left: 1.5px;
+	margin-right: 9.5px;
+	margin-left: 1.8px;
 
 }
 
@@ -534,7 +484,118 @@ img.expand{
  	background-color: gray;
  }
 
+
+.allmenu{
+  width: 90%;
+  margin: 0 auto;
+
+
+}
+#menu  li a:hover{
+	color: #d5ab5d;
+	text-decoration: underline;
+}
+.allmenu ul{
+	
+	background-color: 	#f5f0e6;
+	margin-bottom: 15px;
+
+}
+.allmenu li{
+	font-size: 18px;
+	display:inline-block;
+	margin-right: 55px;
+}
+
+.allmenu li a {
+    display:inline-block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+ 
+    letter-spacing: 0.75px;
+    color: 	#433317;
+   
+    text-decoration: none;
+
+}
+
+.show-menu {
+    font-family:inherit;
+    text-decoration: none;
+    color: #FF0000;
+    background:  none;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    margin-bottom: 40px;
+}
+
+ .topnav {
+ 	width: 89.5%;
+ 	margin: auto;
+ 	margin-bottom: 10px;
+  overflow: hidden;
+ background-color: 	#f5f0e6;
+	margin-bottom: 15px;
+}
+
+.topnav a {
+ display:inline-block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: 55px;
+ 
+    letter-spacing: 0.75px;
+    color: 	#433317;
+   
+    text-decoration: none;
+}
+
+.topnav a:hover {
+ color: #d5ab5d;
+	text-decoration: underline;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+
 @media screen and (max-width : 761px){
+.topnav{
+	width: 100%;
+
+}
+.topnav a{
+	margin-left: 10px;
+}
+ .topnav a:not(:first-child) {display: none;
+ }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: #d5ab5d;
+
+  }
+
+   .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
 p {
 	font-size: 12px;
 }
@@ -555,6 +616,9 @@ h2{
 #header img{
 	width: 50%;
 }
+#menu li a .icon{
+	display: none;
+}
 .show-menu {
        display:block;
        width: 40px;
@@ -574,6 +638,7 @@ h2{
       }
 #menu{
 	background-color:  #d5ab5d;
+	margin-top: 0;
 	
 }
 #menu li{
@@ -592,9 +657,7 @@ h2{
    .allmenu{
       width: 100%;
      height: auto;
-     
-
-      opacity: 0.95;
+     opacity: 0.95;
 
     }
      input[type=checkbox]~ #menu li{
@@ -604,6 +667,7 @@ h2{
 input[type=checkbox]:checked ~ #menu li{
     display: block;
 }
+
 .show-menu {
         display:block;
         width: 40px;
