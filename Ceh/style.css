@@ -308,18 +308,26 @@ img.expand{
 .texting{
 	width: 25%;
 	display: inline-block;
-	margin: 30px  0px 80px 30px;
+	margin: 30px  0px 80px 60px;
 	height: 100px;
+
 }
 .texting h2,p,a{
 	text-align: left;
 }
 .texting h2{
 	color: #d5ab5d;
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
 }
 .texting p,a{
 	color: 	#778899;
 	
+	font-size: 14px;
+}
+#footertext a{
 	font-size: 16px;
 }
 .texting img{
@@ -506,9 +514,9 @@ img.expand{
 
 }
 .allmenu li{
-	font-size: 18px;
+	font-size: 20px;
 	display:inline-block;
-	margin-right: 55px;
+	margin-right: 34px;
 }
 
 .allmenu li a {
@@ -517,9 +525,9 @@ img.expand{
     text-align: center;
     line-height: 60px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
- 
-    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 0.70px;
     color: 	#433317;
    
     text-decoration: none;
