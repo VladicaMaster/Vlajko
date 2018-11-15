@@ -868,6 +868,9 @@ footer a ,footer p{
 .slider__control--right {
   left: 90%;
 }
+#kontakt1 iframe{
+  width: 95%;
+}
 
 }
 
