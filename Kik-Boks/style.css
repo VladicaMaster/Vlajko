@@ -882,11 +882,13 @@ footer a ,footer p{
 }
 
 #top{
+<<<<<<< HEAD
  
   position: fixed;
+=======
+>>>>>>> b9cae726b07316faeb1ae5ba64b509ead2a1dd38
   top: 450px;
   right: 20px;
-  z-index: 1;
 }
 
 }
