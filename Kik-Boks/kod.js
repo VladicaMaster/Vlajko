@@ -1,8 +1,5 @@
 
 
-
-
-
 //adding class by click
 $(document).ready(function() {
     $('li a').click(function(event) {
