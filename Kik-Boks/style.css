@@ -52,7 +52,7 @@ footer{
   left: 15%;
 	width: 85%;
 	 background-color: 	#202020;
-	height: 60px;
+	height: 70px;
 	text-align: center;
 	line-height: 60px;
 }
@@ -189,6 +189,7 @@ header a{
   position: relative;
   left: 8%;
   margin: auto;
+
 	
 }
 #trening h2{
@@ -468,13 +469,13 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
   clip-path: circle(120vmax at 30vw 50%);
 }
 .slide:nth-child(1) .slide__inner {
-  background-image: url("images/kickboxing.jpg");
+  background-image: url("images/gasa14.jpg");
 }
 .slide:nth-child(2) .slide__inner {
-  background-image: url("images/kickboxing2.jpg");
+  background-image: url("images/gasa6.jpg");
 }
 .slide:nth-child(3) .slide__inner {
-  background-image: url("images/kids2.jpg");
+  background-image: url("images/kik3.jpg");
 }
 .slide:nth-child(4) .slide__inner {
   background-image: url("images/kikbox.jpg");
@@ -782,6 +783,7 @@ input[type=checkbox]:checked ~ #menu li{
   left: 0.5%;
   width: 95%;
   margin: auto;
+  height: auto;
 }
 
 .container2{
@@ -878,16 +880,14 @@ footer a ,footer p{
 #kontakt1 iframe{
   width: 95%;
 }
-<<<<<<< HEAD
+
 #top{
  
   position: fixed;
-  top: 500px;
+  top: 450px;
   right: 20px;
   z-index: 1;
 }
-=======
->>>>>>> fecc193a3eb84ff4b589ebfc8462ced00cd1ab75
 
 }
 

@@ -4,6 +4,7 @@
 $(document).ready(function() {
     $('li a').click(function(event) {
     var offset = $($(this).attr("href")).offset().top;
+  
     $('html, body').animate({
       scrollTop: offset + 'px'
     },500);     
@@ -29,6 +30,8 @@ $(window).scroll(function() {
         }
     });
 }).scroll();
+
+
 
 
 //slider
@@ -85,7 +88,7 @@ $(window).scroll(function() {
 
 
 
-//galerij 
+//galerija 
 "use strict";
 $(document).ready(function() {
 
@@ -101,7 +104,7 @@ $(document).ready(function() {
     "images/gasa5.jpg",
     "images/gasa6.jpg",
     "images/gasa7.jpg",
-    "images/gasa8.jpg",
+    "images/kbs4.jpg",
     "images/gasa9.jpg",
     "images/gasa10.jpg",
     "images/gasa11.jpg",
