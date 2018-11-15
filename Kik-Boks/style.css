@@ -700,7 +700,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
   top: 30px;
   left: 60px;
   width: 60px;
-  z-index: 2;
+  z-index: 3;
 }
 #logoTop img{
   width:100%; 
