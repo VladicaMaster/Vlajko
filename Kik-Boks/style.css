@@ -211,8 +211,6 @@ header a{
 }
 
 
-
-
 /* Useful Classes */
 .xy-center {
 	position: absolute;
@@ -383,6 +381,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
   background: #fff;
   transition: background-color 0.3s;
   cursor: pointer;
+
 }
 .slider__control--right {
   left: 95%;
@@ -678,6 +677,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
 .show-front {
   transform: none;
 }
+#logoTop{
+  display: none;
+}
 
 @media screen and (max-width: 761px){
  header{
@@ -691,6 +693,17 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
 }
 #logo{
   display: none;
+}
+#logoTop{
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 60px;
+  z-index: 2;
+}
+#logoTop img{
+  width:100%; 
 }
 .show-menu {
        display:block;
@@ -808,7 +821,7 @@ input[type=checkbox]:checked ~ #menu li{
   left: 0;
   width: 100%;
   margin-top: 50px;
-
+  height: 800px;
   margin: auto;
 }
 
@@ -818,13 +831,13 @@ input[type=checkbox]:checked ~ #menu li{
    perspective: 500px;
 }
 .demo__part{
-  width: 15.7%;
+  width: 15.5%;
 
 }
 #kontakt{
   left: 0;
   width: 100%;
-  margin-top: 200px;
+  
 }
 #kontakt1{
   width: 100%;
@@ -849,14 +862,11 @@ footer a ,footer p{
   margin-top: 0px;
   width: 0px;
   height: 0px;
-
+    padding: 30px;
+    background: none;
 }
 .slider__control--right {
   left: 90%;
-}
-
-#kontakt1 iframe{
-  width: 95%;
 }
 
 }
