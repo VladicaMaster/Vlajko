@@ -61,7 +61,7 @@ display: inline-block;
  vertical-align: middle;
  text-align: center;
  font-size: 15px;
- 
+ line-height: 23px;
 }
 footer  a:hover{
 	color: #40E0D0;
@@ -211,8 +211,6 @@ header a{
 }
 
 
-
-
 /* Useful Classes */
 .xy-center {
 	position: absolute;
@@ -355,6 +353,12 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
 }
 #kontakt1 iframe{
   box-shadow: 0px 0px 7px 7px #696969;
+  
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#kontakt1 iframe:hover{
+  -webkit-transform:scale(1.1);
 }
 
 .slider {
@@ -383,6 +387,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
   background: #fff;
   transition: background-color 0.3s;
   cursor: pointer;
+
 }
 .slider__control--right {
   left: 95%;
@@ -678,6 +683,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
 .show-front {
   transform: none;
 }
+#logoTop{
+  display: none;
+}
 
 @media screen and (max-width: 761px){
  header{
@@ -691,6 +699,17 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
 }
 #logo{
   display: none;
+}
+#logoTop{
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 60px;
+  z-index: 3;
+}
+#logoTop img{
+  width:100%; 
 }
 .show-menu {
        display:block;
@@ -716,10 +735,10 @@ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images
   padding-top:15px; 
   padding-bottom: 16px;
   margin-left: 13px;
-  line-height: 17px;
+  line-height: 16px;
 }
 #menu a{
-  font-size: 10px;
+  font-size: 13px;
   color: #fedd1c;
 }
 
@@ -808,7 +827,7 @@ input[type=checkbox]:checked ~ #menu li{
   left: 0;
   width: 100%;
   margin-top: 50px;
-
+  height: 800px;
   margin: auto;
 }
 
@@ -818,13 +837,13 @@ input[type=checkbox]:checked ~ #menu li{
    perspective: 500px;
 }
 .demo__part{
-  width: 15.7%;
+  width: 15.5%;
 
 }
 #kontakt{
   left: 0;
   width: 100%;
-  margin-top: 200px;
+  
 }
 #kontakt1{
   width: 100%;
@@ -839,6 +858,7 @@ footer{
 }
 footer a ,footer p{
   font-size: 12px;
+  line-height: 18px;
 }
 .slide{
   border-radius: 10%;
@@ -849,10 +869,21 @@ footer a ,footer p{
   margin-top: 0px;
   width: 0px;
   height: 0px;
-
+    padding: 30px;
+    background: none;
 }
 .slider__control--right {
   left: 90%;
+}
+#kontakt1 iframe{
+  width: 95%;
+}
+#top{
+ 
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  z-index: 1;
 }
 
 }
