@@ -880,11 +880,8 @@ footer a ,footer p{
 }
 
 #top{
- 
-  position: fixed;
-  top: 500px;
+  top: 450px;
   right: 20px;
-  z-index: 1;
 }
 
 }
