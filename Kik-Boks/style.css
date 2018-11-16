@@ -881,14 +881,10 @@ footer a ,footer p{
   width: 95%;
 }
 
-#top{
-<<<<<<< HEAD
- 
+#top{ 
   position: fixed;
-=======
->>>>>>> b9cae726b07316faeb1ae5ba64b509ead2a1dd38
   top: 450px;
-  right: 20px;
+  right: 30px;
 }
 
 }
