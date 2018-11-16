@@ -86,9 +86,85 @@ $(window).scroll(function() {
 }());
 
 
+//galerija2
+var numberOfImages = 56;
+var index;
+
+function closeup(link, id)
+{
+  var div = document.getElementById('myCloseup');
+  var span = document.getElementsByClassName("close")[0];
+  var back = document.getElementsByClassName("back")[0];
+  index=parseInt(id);
+
+    div.style.display = "block";
+
+   // Dodajem sliku
+   var img = document.createElement("img");
+ 
+   img.id = "slika";
+   img.src = link;
+   var pic = document.getElementById("picture");
+ 
+   pic.appendChild(img);
+
+    span.onclick = function() {
+    div.style.display = "none";
+    pic.removeChild(img);
+
+    }
+
+    div.onclick = function(event) {
+    if (event.target == div) {
+        div.style.display = "none";
+        pic.removeChild(img);
+    }
+   }
+
+   back.onclick = function(){
+    div.style.display = "none";
+    pic.removeChild(img);
+   }
+
+}
+
+function left()
+{
+    
+   if(index>1)
+   {  
+   var img = document.getElementById("slika");
+   var num = index-1;
+   
+   var new_img = document.getElementById(num.toString());
+
+   img.src = new_img.src;
+   index = num;
+  }
+
+ }
+
+function right()
+{
+
+  if(index<56)
+  {
+   var img = document.getElementById("slika");
+   var num = parseInt(index)+1;
+
+   var new_img = document.getElementById(num.toString());
+
+   if(num)
+   img.src = new_img.src;
+   index = num;
+ }
+
+ 
+ }
 
 
-//galerija 
+
+//galerija1
 "use strict";
 $(document).ready(function() {
 
@@ -208,4 +284,29 @@ $(document).ready(function() {
       waveChange(rowN, colN - 1);
     }, staggerTime);
   }
+});
+
+
+//moving element as mouse moves
+//Creates an event that fires every time the mouse moves over any div with the class of "img".
+$(".img").mousemove(function(event){
+  
+  //Both the x and y value are calculated by taking the mouse x,y position on the page and subtracting it from the x,y position of the image on the page. "this" is the hovered element with the class of "img"
+  var mousex = event.pageX - $(this).offset().left;
+  var mousey = event.pageY - $(this).offset().top;
+  
+  
+  //If you just used the mouse position values the translation effect will only go up and to the right, by subtracting half of the length / width of the imagevfrom the values  we get either a positive or negitive number so that the image will move in any direction.
+  
+  //The 40 controls the amount of "movement" that will happen by giving us a smaller number, feel free to change it to get the effect that you want.
+  var imgx = (mousex - 300) / 40;
+  var imgy = (mousey - 200) / 40;
+  
+  //Adds a translation css styles to the image element
+  $(this).css("transform", "translate(" + imgx + "px," + imgy + "px)");
+});
+
+//This function will fire every time the user mouses off of the image. It resets the translation back to 0.
+$(".img").mouseout(function(){
+  $(this).css("transform", "translate(0px,0px)");
 });

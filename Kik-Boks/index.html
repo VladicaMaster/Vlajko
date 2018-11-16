@@ -90,7 +90,7 @@
 	<p>Kik boks ili Kickboxing je savremeni borilački sport kog je sedamdesestih godina prošlog veka osmislio Majk Anderson kao zapadnjački odgovor na istočnjačke borilačke veštine. Iako se radi o jedinstvenom sportu, kik boks nije naziv za jedinstvenu veštinu već obuhvata nekoliko različitih borilačkih disciplina. Pod njega spadaju: polu-kontakt, laki-kontakt, puni-kontakt (full contact) , lou-kik (low kick ili niski udarac), tajlandski kik boks, muzičke forme a, u poslednje vreme i Aero kik boks odnosno kombinacija kik boksa i aerobika.</p>
 </div>
 
-<div class="front1" ><img src="images/Logo.png">
+<div class="front1" ><img src="images/Logo.png" class="img">
 </div>
 
 <div id="trening" class="page"><h1>DISCIPLINE</h1>
@@ -140,6 +140,57 @@
 		
 </div>
 
+<div id="gallery"  class="gallery " align="center">
+	<div id="gal"><h1>GALERIJA</h1></div>
+	 <div class="gallery-wraper ">
+    <img id="1"  src="Gallery/image1.jpg" onclick="closeup(this.src, this.id)">
+    </div>
+    <div class="gallery-wraper ">
+    <img id="2" " src="Gallery/image2.jpg" onclick="closeup(this.src, this.id)">
+    </div>
+    <div class="gallery-wraper ">
+    <img id="3" " src="Gallery/image3.jpg" onclick="closeup(this.src, this.id)">
+    </div>
+    <div class="gallery-wraper ">
+    <img id="4"  src="Gallery/image4.jpg" onclick="closeup(this.src, this.id)">
+    </div>
+    <div class="gallery-wraper ">
+    <img id="5"  src="Gallery/image5.jpg" onclick="closeup(this.src, this.id)">
+    </div>
+    <div class="gallery-wraper ">
+    <img id="6"  src="Gallery/image6.jpg" onclick="closeup(this.src, this.id)">
+</div>
+<div class="gallery-wraper ">
+    <img id="7"  src="Gallery/image7.jpg" onclick="closeup(this.src, this.id)">
+</div>
+<div class="gallery-wraper ">
+    <img id="8" " src="Gallery/image8.jpg" onclick="closeup(this.src, this.id)">
+</div>
+<div class="gallery-wraper ">
+    <img id="9"  src="Gallery/image9.jpg" onclick="closeup(this.src, this.id)">
+</div><br>
+<form action="gallery.html">
+<button>JOŠ FOTOGRAFIJA</button>
+</form>
+</div>
+
+<!-- Prozor -->
+<div id="myCloseup" class="closeup">
+
+<span class="close">&times;</span>
+  <!-- Sadrazaj prozora -->
+  <div class="closeup-content"> 
+    <div id="picture" ></div>
+
+  </div>
+
+   <span class="buttons" >
+<span class="left" onclick="left()"> <img src="Gallery/left.png"> </span>
+<span class="back"> <img src="Gallery/home.png"> </span>
+<span class="right" onclick="right()"> <img src="Gallery/right.png"> </span>
+</span>
+
+</div>
 
 
 
@@ -151,6 +202,7 @@
   <div class="demo__gallery">
   </div>  
 </div>
+
 
 
 <div id="kontakt" class="page" align="center">
