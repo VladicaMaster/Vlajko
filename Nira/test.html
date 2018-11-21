@@ -1,0 +1,86 @@
+<div id="carousel">
+    	<span class="prev arrow">&lt;</span>
+        	<div id="content_carousel">
+                <ul>
+                    <li>
+                        <a href="#">
+                        	<img src="images/nature3.jpg">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/nature2.jpg">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/nature1.jpg">
+                            
+                        </a>
+                    </li>
+                
+                   <li>
+                        <a href="#">
+                        	<img src="images/nature4.jpeg">
+                           
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/nature4.jpeg">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/nature2.jpg">
+                            
+                        </a>
+                    </li>
+                  
+                   
+                </ul>
+            </div>
+    	<span class="next arrow">&gt;</span>
+    </div>
+
+
+
+
+
+    $(function() {
+  
+ 
+  var margLeftLi = parseInt($('#content_carousel ul li+li').css('margin-left'));
+  var contentCarouselWidth = (($('#content_carousel ul li').width()) * 4) + (4 * margLeftLi);
+  
+  $('#content_carousel').width(contentCarouselWidth);
+  
+  var ulWidth = (($('#content_carousel ul').children().length) * 200) + (($('#content_carousel ul').children().length)-1) * margLeftLi;
+  
+  $('#content_carousel ul').width(ulWidth);
+  
+  var carouselWidth = contentCarouselWidth + (2 * $('#carousel .arrow').width()) + (2 * parseInt($('#content_carousel').css('margin-left')));
+  
+  $('#carousel').width(carouselWidth);
+  
+  
+
+  $('#carousel .arrow.prev').click(function(evt) {
+    var margLeftUl = parseInt($('#content_carousel ul').css('margin-left'));
+    if(margLeftUl < 0) {
+      $(this).closest('#carousel').find('#content_carousel ul').animate({'margin-left':'+='+contentCarouselWidth},1000);
+    }
+  });
+  
+  $('#carousel .arrow.next').click(function(evt) {
+    var margLeftUl = parseInt($('#content_carousel ul').css('margin-left'));
+    console.log(-(carouselWidth * 1.75));
+    if(margLeftUl > -(carouselWidth * 1.75)) {
+      $(this).closest('#carousel').find('#content_carousel ul').animate({'margin-left':'-='+contentCarouselWidth},1000);
+    }
+  });
+
+});
