@@ -1,53 +1,72 @@
 * {box-sizing: border-box}
 
 body {
-  font-family: Verdana,
-  sans-serif; 
-  margin:0
+  font-family: Verdana;
+ 
+  margin:0;
+  padding: 0;
 }
 h4{color: white}
+h1{
+  font-size: 44px;
+  font-weight: 900;
+}
 .top{
   width: 100%;
   height: 30px;
   position: fixed;
   top: 0;
   z-index: 1;
+  margin-top: 0;
+}
+@font-face {
+   font-family: 'Regular';
+    src: url('font1.eot');
+    src: local('Regular'), 
+         local('Comfortaa'), 
+         url('font1.ttf') format('truetype'),
+         url('font1.svg#font') format('svg'); 
 }
 a{
-  
+  font-family: 'Regular';
    font-weight: 200;
    font-size: 14px;
    letter-spacing: .08em;
 }
 .top img{
   width: 100%;
-  height: 30px;
+ height: 30px;
 
 }
 .bottom{
    width: 100%;
-  height: 30px;
-  z-index: 1;
+  height: auto;
+ 
   position: absolute;
   bottom: 0;
   padding-bottom: 0;
 }
 .bottom img{
   width: 100%;
-  height: 30px;
+  ;
 }
 
+.middle{
+  width: 1345px;
+  margin: auto;
+  position:relative;
 
+}
 
 .allmenu > ul > li.active > a {
   text-decoration: underline;
 }
 header{
-  position: fixed;
+  position: sticky;
   top: 30px;
-  width: 100%;
+ width: 100%;
   background-color: black;
-  height: 50px;
+  height: 45px;
   z-index: 2;
 }
 footer{
@@ -66,20 +85,28 @@ header a,footer a{
   width: 100px;
   position: absolute;
   top: 8%;
-  left: 9%;
+  left: 0;
 }
 #logo img, #logo1 img{
   width: 100%;
 }
 #logo1{
-  top: 16%;
+  top: 32%;
 }
 
 #menu li a ,#menu1 li a {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  margin-right: 24px;
+  margin-left: 36px;
+}
+
+#menu li ul li a{
+   margin-left: 10px;
+}
+#menu1 li ul li a{
+  font-size: 8px;
+
 }
 
 input[type=checkbox]{
@@ -94,16 +121,17 @@ input[type=checkbox]:checked ~ #menu{
 
 .allmenu{
 position: absolute;
-top: -5px;
-left: 26%;
-margin: 0 auto;
+top: -8px;
+right: 0;
+
 z-index: 1;
 
 }
 .allmenu1{
   position: absolute;
-  left: 25%;
+  right: 0;
   top: 0;
+
 }
 #menu  li a:hover{
   
@@ -117,13 +145,15 @@ z-index: 1;
 .allmenu li, .allmenu1 li{
   font-size: 11px;
   display:inline-block;
-  margin-right: 10px;
-vertical-align: middle;
-font-weight: 200;
- vertical-align: middle;
+ 
+  vertical-align: middle;
+  font-weight: 200;
+ 
   background-color:   black;
- position: relative;
+  position: relative;
 }
+
+
 
 
 .allmenu li a, .allmenu1 li a {
@@ -136,22 +166,25 @@ font-weight: 200;
    
     letter-spacing: 0.70px;
     color:  white;
-   margin-right: 10px;
+   
     text-decoration: none;
     font-weight: 200;
 
+}
+.allmenu li a{
+  text-align: right;
 }
 
 .allmenu ul ul, .allmenu1 ul ul{
   display:none;
   position:absolute;
   top:103%;
-  left: -5%;
+  left: 25%;
   background:black;
   padding:0;
-    opacity: 0.9;
+    opacity: 0.8;
     padding-top: 10px;
-   
+
 
 }
 .allmenu1 ul ul{
@@ -159,18 +192,19 @@ font-weight: 200;
   left: 0%;
   opacity: 1;
   padding-top: 5px;  
+ width: 200px;
 }
 .allmenu ul ul ul
 {
   display:none;
   position:absolute;
   top:0%;
-  left: 102%;
+  left: 100%;
   background:black;
   padding:0;
-   
+   opacity: 1;
    z-index: 2;
-   
+  
 }
 
 
@@ -184,18 +218,20 @@ font-weight: 200;
    z-index: 1;
     display: block;
     text-align: left;
-    
+    margin-left: 0;
+    padding-left: 0;
 }
 .allmenu1 ul ul li{
-   width: 130px;
+   width: 150px;
     text-align: left;
+
 }
 
 .allmenu ul ul ul li
 {
   float:none;
-  width:240px;
-   padding: 10px 5px 6px 15px;
+  width:220px;
+   padding: 10px 5px 6px 0px;
     border-right: none;
    z-index: 1;
     display: block;
@@ -209,12 +245,12 @@ font-weight: 200;
 #menu1 ul>li a{
   font-size: 10px;
 }
-.allmenu ul>li>ul>li a span{
- text-align: right;
-}
+
 #arrow1, #arrow2{
   position: absolute;
   right: 0;
+  bottom: 8px;
+  padding-right: 8px;
 }
 
 .allmenu ul li:hover > ul
@@ -383,13 +419,13 @@ img {vertical-align: middle;}
   cursor: pointer;
 }
 #welcome1{
-  width: 90%;
+  width: 1345px;
   margin: auto;
-  margin-left: 5%;
+ margin-top: 50px;
 }
 .welcome{
   display: inline-block;
-  width: 48%;
+  width: 49%;
   vertical-align: top;
   position: relative;
 }
@@ -399,7 +435,8 @@ img {vertical-align: middle;}
 }
 .welcome p{
   text-align: left;
-  font-size: 11px;
+  font-size: 12px;
+  color: #333333;
 }
 .welcome button{
 
@@ -413,22 +450,21 @@ img {vertical-align: middle;}
 .welcome button:hover{
   cursor: pointer;
 }
-#welcomeUs h2{
-  text-align: center;
+.gray{
+  color: #333333;
 }
-
 .v-centered {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 1345px;
  padding-top: 90px;
   margin: auto;
 }
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
 }
 .roll {
   position: relative;
@@ -437,7 +473,7 @@ img {vertical-align: middle;}
   left:  0px;
 }
 .project {
-  width: 24.1%;
+  width: 24.3%;
   height: auto;
   background-color: black;
   -webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); 
@@ -462,7 +498,7 @@ img {vertical-align: middle;}
 .project img {
   
   width:  100%;
-  height: 215px;
+  height: auto;
 
 }
 .project p {
@@ -478,12 +514,17 @@ img {vertical-align: middle;}
 }
 .centerText {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
     opacity: 0;
     width: 100%;
+    transition: .3s ease;
+}
 
+.roll:hover .project {
+  bottom: 0;
+  height: 100%;
 }
 
 .centerText:hover {
@@ -515,6 +556,7 @@ img {vertical-align: middle;}
   z-index: 10;
  cursor: pointer;
 }
+
 .navigation:visited  {
   text-decoration: none;
 }
@@ -526,11 +568,15 @@ img {vertical-align: middle;}
   outline: none;
 }
 .navigation:first-of-type {
+color: gray;
+background: none;
+margin-right: 5px;
 
-margin-right: 7px;
 }
 .navigation:last-of-type {
-
+margin-left: 5px;
+color: gray;
+background: none;
 }
 
 
@@ -542,6 +588,10 @@ margin-right: 7px;
   width: 100%;
 }
 
+@media only screen and (max-width: 1350px){
+ header{
+
+}
 
 @media screen and (max-width: 950px) {
     .carousel {
@@ -560,5 +610,7 @@ margin-right: 7px;
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 761px) {
+
+  }
   .prev, .next,.text {font-size: 11px}
 }
