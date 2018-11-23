@@ -52,7 +52,7 @@ a{
 }
 
 .middle{
-  width: 1345px;
+  width: 1280px;
   margin: auto;
   position:relative;
 
@@ -62,9 +62,9 @@ a{
   text-decoration: underline;
 }
 header{
-  position: sticky;
+  position: fixed;
   top: 30px;
- width: 100%;
+  width: 100%;
   background-color: black;
   height: 45px;
   z-index: 2;
@@ -74,7 +74,7 @@ footer{
   background-color: black;
   position: relative;
   height: 110px;
-  margin-top: 55px;
+ 
 }
 
 header a,footer a{
@@ -91,14 +91,14 @@ header a,footer a{
   width: 100%;
 }
 #logo1{
-  top: 32%;
+  top: 35%;
 }
 
 #menu li a ,#menu1 li a {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  margin-left: 36px;
+  margin-left: 42px;
 }
 
 #menu li ul li a{
@@ -257,11 +257,14 @@ z-index: 1;
 {
   display: inline-block;
 }
+#newsLi{
+  width: 120px;
+}
 
 .show-menu {
     font-family:inherit;
     text-decoration: none;
-    color: #FF0000;
+    color: white;
     background:  none;
     text-align: center;
     padding: 10px 0;
@@ -274,8 +277,8 @@ z-index: 1;
   cursor: pointer;
  }
 .fa-bars{
-  color: #d5ab5d;
-  width: 40px;
+  color: white;
+  width: 30px;
   padding-bottom: 4px;
   padding-top: 4px;
   font-size:24px;
@@ -284,7 +287,7 @@ z-index: 1;
 }
 .fa-bars:hover{
   color: white;
-  background-color: #d5ab5d;
+  
 }
 
 .mySlides{
@@ -364,8 +367,7 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 11px;
+ height: 11px;
   width: 11px;
   margin: 0 2px;
   background-color: gray;
@@ -407,25 +409,31 @@ img {vertical-align: middle;}
   color: white;
   text-align: center;
 }
+.centered h1{
+  line-height: 0px;
+}
 .centered button{
   position: absolute;
   left: 45%;
   background: none;
   color: white;
-  padding: 6px;
+  padding: 8px;
   border: 1px solid white;outline: none;
 }
 .centered button:hover {
   cursor: pointer;
 }
+
+
+
 #welcome1{
-  width: 1345px;
+  width: 1280px;
   margin: auto;
  margin-top: 50px;
 }
 .welcome{
   display: inline-block;
-  width: 49%;
+  width: 49.5%;
   vertical-align: top;
   position: relative;
 }
@@ -457,7 +465,7 @@ img {vertical-align: middle;}
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1345px;
+  width: 1280px;
  padding-top: 90px;
   margin: auto;
 }
@@ -473,7 +481,7 @@ img {vertical-align: middle;}
   left:  0px;
 }
 .project {
-  width: 24.3%;
+  width: 24.2%;
   height: auto;
   background-color: black;
   -webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); 
@@ -485,14 +493,19 @@ img {vertical-align: middle;}
   font-size: 18px;
   padding-top: 0;
   position: relative;
-  -webkit-transition: .6s ease-in-out;
+  -webkit-transition: .7s ease;
+  transition: .7s ease-in-out;
 }
+
+
 .project:hover img {
   opacity: 0.3;
 }
 .project:hover{
   background-color: black;
   cursor: pointer;
+   bottom: 0;
+  height: 100%;
 }
 
 .project img {
@@ -520,12 +533,9 @@ img {vertical-align: middle;}
     opacity: 0;
     width: 100%;
     transition: .3s ease;
+    -webkit-transition: .7s ease-in-out;
 }
 
-.roll:hover .project {
-  bottom: 0;
-  height: 100%;
-}
 
 .centerText:hover {
   opacity: 1;
@@ -587,10 +597,127 @@ background: none;
 .bottomFooter img{
   width: 100%;
 }
+.bottomTape{
+  width: 100%;
+  margin-top: 50px;
+}
+.bottomTape img{
+  width: 100%;
+}
 
-@media only screen and (max-width: 1350px){
- header{
+@media screen and (max-width : 761px) {
+ 
 
+  .show-menu {
+       display:block;
+      
+       position: absolute;
+       top: 10%;
+       right: 2%;
+       float: right;
+       margin-right: 20px;
+       
+  }
+  .top{
+    height: 13px;
+    margin-top: 0;
+    top:-5px;
+  }
+  .top img{
+    height: 13px;
+
+  }
+
+  header{
+    top: 10px;
+    height: 30px;
+
+  }
+#logo{
+  width: 50px;
+
+  top: 10%;
+  left: 5%;
+  
+}
+
+#menu li a{
+  font-size: 13px;
+  
+  color: white;
+  font-weight: 100;
+}
+
+.show-menu {
+       display:block;
+      z-index: 3;
+       position: absolute;
+       top: 8%;
+      left:20%;
+       margin-right: 20px;
+       
+  }
+
+  #menu{
+  background-color:  #d5ab5d;
+ 
+  
+}
+#menu li{
+  text-align: left;
+  
+}
+#menu a{
+  font-size: 9px;
+  color: white;
+  font-weight: 100;
+}
+#menu  li a:hover{
+  
+  text-decoration: underline;
+}
+
+.allmenu{
+    margin-top: 13px;
+      width: 115%;
+     height: auto;
+     opacity: 0.95;
+     left: -50px;
+     top: 0;
+    }
+     input[type=checkbox] ~ #menu li{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu li{
+    display: block;
+}
+.middle{
+  width: 100%;
+}
+.show-menu {
+        position: absolute;
+        display:block;
+        width: 40px;
+        left:90%;
+        top: -10px;
+        height: 20px;
+      
+    }
+
+li{
+  font-size: 12px;
+}
+h1{
+  font-size: 20px;
+  line-height: 20px;
+}
+h2{
+  font-size: 15px;
+}
+
+.centered{
+  width: 100%
 }
 
 @media screen and (max-width: 950px) {
@@ -609,8 +736,3 @@ background: none;
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 761px) {
-
-  }
-  .prev, .next,.text {font-size: 11px}
-}
