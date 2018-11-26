@@ -140,7 +140,7 @@ $(window).on("load",function() {
     })
   });
 
-
+/*
 #!/bin/bash
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
@@ -173,4 +173,4 @@ do
     fi
   fi
 done
-IFS=$SAVEIFS
+IFS=$SAVEIFS*/
