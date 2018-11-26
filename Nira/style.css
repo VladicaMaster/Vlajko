@@ -1,41 +1,49 @@
 * {box-sizing: border-box}
 
+
 body {
   font-family: Verdana;
  
   margin:0;
   padding: 0;
 }
-h4{color: white}
-h1{
-  font-size: 44px;
+a, p, h1,h2,h3,h4,li{
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4{
   font-weight: 900;
+}
+p{
+  font-weight: 400;
+}
+h4{
+  color: white;
+  }
+h1{
+
+  font-size: 48px;
+  font-weight: 900;
+}
+
+a{
+  
+   font-weight: 500;
+   font-size: 14px;
+   letter-spacing: .08em;
 }
 .top{
   width: 100%;
-  height: 30px;
+  height: auto;
   position: fixed;
   top: 0;
   z-index: 1;
   margin-top: 0;
 }
-@font-face {
-   font-family: 'Regular';
-    src: url('font1.eot');
-    src: local('Regular'), 
-         local('Comfortaa'), 
-         url('font1.ttf') format('truetype'),
-         url('font1.svg#font') format('svg'); 
-}
-a{
-  font-family: 'Regular';
-   font-weight: 200;
-   font-size: 14px;
-   letter-spacing: .08em;
-}
+
+
 .top img{
   width: 100%;
- height: 30px;
+
 
 }
 .bottom{
@@ -48,7 +56,6 @@ a{
 }
 .bottom img{
   width: 100%;
-  ;
 }
 
 .middle{
@@ -58,16 +65,18 @@ a{
 
 }
 
+
 .allmenu > ul > li.active > a {
   text-decoration: underline;
 }
 header{
   position: fixed;
-  top: 30px;
+  top: 27px;
   width: 100%;
   background-color: black;
   height: 45px;
   z-index: 2;
+
 }
 footer{
   width: 100%;
@@ -95,10 +104,10 @@ header a,footer a{
 }
 
 #menu li a ,#menu1 li a {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 300;
+  
+  font-weight: 500;
   font-size: 14px;
-  margin-left: 42px;
+  margin-left: 46px;
 }
 
 #menu li ul li a{
@@ -117,7 +126,20 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+input[type=checkbox]:checked ~ #menu2{
+    display: block;
+}
+input[type=checkbox]:checked ~ #menu3{
+    display: block;
+}
 
+input[type=checkbox]:checked ~ #menu4{
+    display: block;
+}
+.fa-angle-down{
+  color: white;
+  width: 10px;
+}
 
 .allmenu{
 position: absolute;
@@ -147,7 +169,7 @@ z-index: 1;
   display:inline-block;
  
   vertical-align: middle;
-  font-weight: 200;
+ 
  
   background-color:   black;
   position: relative;
@@ -158,17 +180,11 @@ z-index: 1;
 
 .allmenu li a, .allmenu1 li a {
     display:inline-block;
-  
     text-align: center;
-   
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
-   
     letter-spacing: 0.70px;
     color:  white;
-   
     text-decoration: none;
-    font-weight: 200;
+   
 
 }
 .allmenu li a{
@@ -222,7 +238,7 @@ z-index: 1;
     padding-left: 0;
 }
 .allmenu1 ul ul li{
-   width: 150px;
+   width: 160px;
     text-align: left;
 
 }
@@ -258,11 +274,11 @@ z-index: 1;
   display: inline-block;
 }
 #newsLi{
-  width: 120px;
+  width: 130px;
 }
 
-.show-menu {
-    font-family:inherit;
+.show-menu , .show-menu2 {
+    
     text-decoration: none;
     color: white;
     background:  none;
@@ -273,7 +289,16 @@ z-index: 1;
 
 }
 
- .show-menu:hover{
+.show-menu3, .show-menu4{
+  display: none;
+}
+
+.show-menu1{
+  padding:0;
+  margin-bottom: 0;
+}
+
+ .show-menu:hover, .show-menu2:hover, .show-menu3:hover, .show-menu4:hover {
   cursor: pointer;
  }
 .fa-bars{
@@ -301,7 +326,7 @@ img {vertical-align: middle;}
  width: 100%;
   position: relative;
   margin: auto;
-
+  top: 52px;
 
 }
 .mySlides{
@@ -330,7 +355,7 @@ img {vertical-align: middle;}
 #pagination{
   position: absolute;
   bottom: 10%;
-  left: 50%;
+ left: 45%;
 }
 
 /* Position the "next button" to the right */
@@ -403,11 +428,12 @@ img {vertical-align: middle;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    width: 90%
 }
 .centered h1, .centered h2{
   color: white;
   text-align: center;
+  font-weight: 900;
 }
 .centered h1{
   line-height: 0px;
@@ -516,8 +542,6 @@ img {vertical-align: middle;}
 }
 .project p {
   margin: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
   text-align: center;
   white-space: normal;
   color: white;
@@ -542,8 +566,9 @@ img {vertical-align: middle;}
 }
 
 .sections {
+ 
   text-align: center;
-  color: gray;
+  color: lightgray;
   font-size: 12px;
 }
 
@@ -606,72 +631,85 @@ background: none;
 }
 
 @media screen and (max-width : 761px) {
- 
+ header{
+    top: 8px;
+    height: 35px;
+
+  }
 
   .show-menu {
        display:block;
       
        position: absolute;
-       top: 10%;
+       top: -10px;
        right: 2%;
-       float: right;
+      
        margin-right: 20px;
-       
+       z-index: 3;
+
+        
   }
+  .show-menu2{
+    display: block;
+    top: 5px;
+    right: 5px;
+    padding-bottom: 0;
+    position: absolute;
+  }
+  .show-menu3{
+    display: block;
+    top: 14px;
+    right: -10px;
+    padding-bottom: 0;
+    position: absolute;
+  }
+
+  .show-menu4{
+    display: block;
+    top: 15px;
+    right: -10px;
+    padding-bottom: 0;
+    position: absolute;
+  }
+
   .top{
-    height: 13px;
+  
     margin-top: 0;
-    top:-5px;
+    top:-7px;
   }
   .top img{
-    height: 13px;
+   
 
   }
 
-  header{
-    top: 10px;
-    height: 30px;
-
-  }
+  
 #logo{
-  width: 50px;
+  width: 55px;
 
-  top: 10%;
+  top: 30%;
   left: 5%;
   
 }
 
 #menu li a{
-  font-size: 13px;
-  
+  font-size: 12px;
+  margin-left: 0px;
   color: white;
   font-weight: 100;
 }
 
-.show-menu {
-       display:block;
-      z-index: 3;
-       position: absolute;
-       top: 8%;
-      left:20%;
-       margin-right: 20px;
-       
-  }
 
   #menu{
-  background-color:  #d5ab5d;
+ width: 220px;
+ position: absolute;
+ left: 0;
  
-  
 }
 #menu li{
   text-align: left;
-  
+  padding: 15px;
 }
-#menu a{
-  font-size: 9px;
-  color: white;
-  font-weight: 100;
-}
+
 #menu  li a:hover{
   
   text-decoration: underline;
@@ -679,33 +717,87 @@ background: none;
 
 .allmenu{
     margin-top: 13px;
-      width: 115%;
+      width: 200px;
      height: auto;
      opacity: 0.95;
-     left: -50px;
+    right:4%;
      top: 0;
     }
      input[type=checkbox] ~ #menu li{
     display: none;
 }
 
+ .smallMenu input[type=checkbox] ~ #menu2 li{
+    display: none;
+}
+
+.smallMenu3 input[type=checkbox] ~ #menu3 li{
+    display: none;
+}
+
 input[type=checkbox]:checked ~ #menu li{
     display: block;
 }
+
+.smallMenu input[type=checkbox]:checked ~ #menu2 li{
+    display: block;
+}
+.smallMenu3 input[type=checkbox]:checked ~ #menu3 li{
+    display: block;
+}
+.smallMenu4 input[type=checkbox]:checked ~ #menu4 li{
+    display: block;
+}
+
 .middle{
   width: 100%;
 }
-.show-menu {
-        position: absolute;
-        display:block;
-        width: 40px;
-        left:90%;
-        top: -10px;
-        height: 20px;
-      
-    }
 
-li{
+.allmenu ul li:hover > ul
+{
+  display: none;
+}
+
+.allmenu ul ul{
+  display:none;
+  position:relative;
+  padding-bottom: 0;
+ left:-10px;
+ top: 10px;
+  margin-bottom: 0;
+}
+
+
+
+.allmenu ul ul li a
+{
+  padding: 0 0 0 0;
+  width: 140px;
+ font-size: 6px;
+    display: block;
+    text-align: left;
+  
+}
+
+.allmenu ul ul ul
+{
+  display:none;
+  position:relative;
+ left: -10px;
+  padding:0;
+   opacity: 1;
+ 
+  
+}
+.allmenu ul ul ul li{
+  width: 100px;
+}
+
+#arrow1, #arrow2{
+  display: none;
+}
+
+li, a{
   font-size: 12px;
 }
 h1{
@@ -720,6 +812,90 @@ h2{
   width: 100%
 }
 
+.slideshow-container {
+ margin-top: 0;
+  top: 40px;
+
+}
+.centered button{
+  position: absolute;
+  left: 40%;
+  background: none;
+  color: white;
+  padding: 4px;
+  border: 1px solid white;outline: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px;
+  margin-top: -22px;
+  color: gray;
+  font-weight: bold;
+  font-size: 9px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  
+}
+
+.bottom{
+   width: 100%;
+  height: auto;
+ 
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 0;
+}
+.bottom img{
+  width: 100%;
+}
+
+#pagination{
+  position: absolute;
+  bottom: 10%;
+ left: 38%;
+}
+
+.sections {
+ 
+  text-align: center;
+  color: lightgray;
+  font-size: 6px;
+}
+#welcome1{
+  width: 100%;
+  margin: auto;
+ margin-top: 50px;
+}
+.welcome{
+  width: 90%;
+  margin: auto;
+  margin-left: 10px;
+}
+.allmenu1{
+  display: none;
+}
+.v-centered{
+  width: 100%;
+}
+.project{
+  width: 99%;
+}
+
+.bottomTape{
+position: relative;
+top: 5px;
+}
+#logo1{
+  position: absolute;
+  top: 15px;
+  left: 5%;
+  width: 50px
+}
+}
 @media screen and (max-width: 950px) {
     .carousel {
     position: relative;

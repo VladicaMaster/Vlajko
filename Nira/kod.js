@@ -93,12 +93,12 @@ $('document').ready(function () {
 
 
 function setCurrentSection() {
-  var carouselWidth = $('.carousel').width();
+  var carouselWidth = $('.project').width();
   var projectWidth = $('.project').width() + parseInt($('.project').css('margin-right').replace('px',''));
   var projectsQtt = $('.project').size();
   var projectsPerSection = carouselWidth / projectWidth;
   sections = Math.round(projectsQtt / projectsPerSection);
-  var rollLeft = Math.abs(parseInt($('.roll').css('left').replace('px','')));
+  var rollLeft = Math.abs(parseInt($('.project').css('left').replace('px','')));
   if (rollLeft == 0) currentSection = 1;
   else {
     currentSection = Math.round((rollLeft / carouselWidth) + 1);
@@ -110,11 +110,11 @@ function setCurrentSection() {
 }
 
 function scrollToSection(section) {
-  var width = $('.carousel').width() * (Math.abs(currentSection - section));
+  var width = $('.project').width() * (Math.abs(currentSection - section));
   if (section < currentSection) {
-    $('.roll').animate({left: '+='+width}, "slow", setCurrentSection);
+    $('.project').animate({left: '+='+width}, "slow", setCurrentSection);
   } else {
-    $('.roll').animate({left: '-='+width}, "slow", setCurrentSection);
+    $('.project').animate({left: '-='+width}, "slow", setCurrentSection);
   }
   setSectionIndicator(section);
 }
