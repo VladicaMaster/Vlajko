@@ -643,26 +643,31 @@ background: none;
   }
   .show-menu2{
     display: block;
-    top: 5px;
-    right: 5px;
+    top: -5px;
+    right: 6px;
     padding-bottom: 0;
     position: absolute;
   }
   .show-menu3{
     display: block;
-    top: 14px;
-    right: -10px;
+    top: 7px;
+    right: -15px;
     padding-bottom: 0;
     position: absolute;
   }
 
   .show-menu4{
     display: block;
-    top: 15px;
-    right: -10px;
+    top: 7px;
+    right: -15px;
     padding-bottom: 0;
     position: absolute;
   }
+
+  .fa-angle-down{
+  padding: 8px;
+ 
+}
 
   .top{
   
@@ -695,7 +700,7 @@ background: none;
 }
 #menu li{
   text-align: left;
-  padding: 15px;
+  padding: 11px;
 }
 
 #menu  li a:hover{
@@ -708,7 +713,7 @@ background: none;
       width: 200px;
      height: auto;
      opacity: 0.95;
-    right:4%;
+    right:8%;
      top: 0;
     }
 
@@ -737,10 +742,7 @@ input[type=checkbox]:checked ~ #menu li{
 .smallMenu4 input[type=checkbox]:checked ~ #menu4 li{
     display: block;
 }
-.fa-angle-down{
-  padding: 7px;
-  z-index: 1;
-}
+
 
 .middle{
   width: 100%;
@@ -765,11 +767,12 @@ input[type=checkbox]:checked ~ #menu li{
 .allmenu ul ul li a
 {
   padding: 0 0 0 0;
-  width: 140px;
+  width: 130px;
  font-size: 6px;
     display: block;
     text-align: left;
-  
+  margin-left: -12px;
+ 
 }
 
 .allmenu ul ul ul
