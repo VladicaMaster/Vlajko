@@ -14,7 +14,7 @@ h1,h2,h3,h4{
   font-weight: 900;
 }
 p{
-  font-family:  400;
+  font-family:'Montserrat', sans-serif, Regular 400;
 }
 h4{
   color: white;
@@ -31,6 +31,8 @@ a{
    font-size: 14px;
    letter-spacing: .08em;
 }
+
+
 .top{
   width: 100%;
   height: auto;
@@ -83,7 +85,7 @@ footer{
   background-color: black;
   position: relative;
   height: 110px;
- 
+
 }
 
 header a,footer a{
@@ -368,25 +370,7 @@ z-index: 1;
   color: white
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -398,9 +382,12 @@ z-index: 1;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.active{
+  background-color: white;
+}
  .dot:hover {
-  background-color: #717171;
+  background-color: white;
+  cursor: pointer;
 }
 
 /* Fading animation */
@@ -431,7 +418,7 @@ z-index: 1;
 .centered h1, .centered h2{
   color: white;
   text-align: center;
-  font-weight: 900;
+
 }
 .centered h1{
   line-height: 0px;
@@ -448,7 +435,9 @@ z-index: 1;
   cursor: pointer;
 }
 
-
+.centerText h4{
+margin-bottom: -5px;
+}
 
 #welcome1{
   width: 1280px;
@@ -508,9 +497,6 @@ z-index: 1;
   width: 24.2%;
   height: auto;
   background-color: black;
-  -webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); 
-    -moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); 
-  box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); 
   text-align: center;
   margin: 0 10px 15px 0;
   display: inline-block;
@@ -521,6 +507,9 @@ z-index: 1;
   transition: .7s ease-in-out;
 }
 
+.project img {
+  vertical-align: middle;
+}
 
 .project:hover img {
   opacity: 0.3;
@@ -623,14 +612,19 @@ background: none;
 .bottomTape{
   width: 100%;
   margin-top: 50px;
+  position: relative;
+  top: 5px;
 }
 .bottomTape img{
   width: 100%;
 }
 
+
+
+
 @media screen and (max-width : 761px) {
  header{
-    top: 8px;
+    top: 6px;
     height: 35px;
 
   }
@@ -673,18 +667,14 @@ background: none;
   .top{
   
     margin-top: 0;
-    top:-7px;
-  }
-  .top img{
-   
-
+    top:-8px;
   }
 
   
 #logo{
   width: 55px;
 
-  top: 30%;
+  top: 5px;
   left: 5%;
   
 }
@@ -746,6 +736,9 @@ input[type=checkbox]:checked ~ #menu li{
 }
 .smallMenu4 input[type=checkbox]:checked ~ #menu4 li{
     display: block;
+}
+.fa-angle-down{
+  padding: 6px;
 }
 
 .middle{
@@ -823,6 +816,7 @@ h2{
   color: white;
   padding: 4px;
   border: 1px solid white;outline: none;
+  font-size: 10px;
 }
 
 .prev, .next {
@@ -855,7 +849,7 @@ h2{
 #pagination{
   position: absolute;
   bottom: 10%;
- left: 38%;
+ left: 35%;
 }
 
 .sections {

@@ -1,9 +1,15 @@
 
 //slider
+function loadSlider(){
+
+  setInterval(function(){showSlides(slideIndex += 1)}, 4000)
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+
   showSlides(slideIndex += n);
 }
 
@@ -18,15 +24,15 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-   /* if (i == n) dots.html = 'fa fa-circle';
-     else dots.html = 'fa fa-circle-thin';*/
+  
       slides[i].style.display = "none";  
   }
+  /*
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
-  }
+  }*/
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  //dots[slideIndex-1].className += "active";
 
 }
 
@@ -60,7 +66,7 @@ $('document').ready(function () {
          var curr= $(".project");
         var last= curr.last();
         var first = curr.first();
-        var width= $('.project').width()
+       
         
        if(this.id =='nav-right'){
           first.insertAfter(last);
@@ -84,12 +90,12 @@ $('document').ready(function () {
   }).on('mouseout', function () {
     $(this).removeClass('navigation-hover');
   });
-*/
+
   $(window).resize(function() {
     setCurrentSection();
     setSectionIndicator(currentSection);
   });
-
+*/
 
 
 function setCurrentSection() {
@@ -99,10 +105,12 @@ function setCurrentSection() {
   var projectsPerSection = carouselWidth / projectWidth;
   sections = Math.round(projectsQtt / projectsPerSection);
   var rollLeft = Math.abs(parseInt($('.project').css('left').replace('px','')));
+  /*
   if (rollLeft == 0) currentSection = 1;
   else {
     currentSection = Math.round((rollLeft / carouselWidth) + 1);
   }
+*/
   $('#nav-left').prop('disabled', false);
   $('#nav-left').removeClass('navigation-hover');
   $('#nav-right').prop('disabled', false);
@@ -112,12 +120,13 @@ function setCurrentSection() {
 function scrollToSection(section) {
   var width = $('.project').width() * (Math.abs(currentSection - section));
   if (section < currentSection) {
-    $('.project').animate({left: '+='+width}, "slow", setCurrentSection);
+   // $('.project').animate({left: '+='+width}, "slow", setCurrentSection);
   } else {
-    $('.project').animate({left: '-='+width}, "slow", setCurrentSection);
+    //$('.project').animate({left: '-='+width}, "slow", setCurrentSection);
   }
   setSectionIndicator(section);
 }
+
 
 function setSectionIndicator(section) {
   $('.sections').html('');
