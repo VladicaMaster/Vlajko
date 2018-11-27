@@ -791,6 +791,12 @@ input[type=checkbox]:checked ~ #menu li{
   width: 100px;
 }
 
+.dot {
+ height: 6px;
+  width: 6px;
+ 
+}
+
 #arrow1, #arrow2{
   display: none;
 }
@@ -853,9 +859,9 @@ h2{
 }
 
 #pagination{
-  position: absolute;
+
   bottom: 10%;
- left: 35%;
+ left: 39%;
 }
 
 .sections {
@@ -890,9 +896,15 @@ top: 5px;
 }
 #logo1{
   position: absolute;
-  top: 15px;
-  left: 5%;
+  top: 17px;
+  left: 45%;
   width: 50px
+}
+
+footer{
+
+  height: 55px;
+
 }
 }
 
