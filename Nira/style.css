@@ -71,6 +71,9 @@ a{
 .allmenu > ul > li.active > a {
   text-decoration: underline;
 }
+.allmenu1 > ul > li.active > a {
+  text-decoration: underline;
+}
 header{
   position: fixed;
   top: 27px;
@@ -784,7 +787,7 @@ input[type=checkbox]:checked ~ #menu li{
  left: -10px;
   padding:0;
    opacity: 1;
- 
+ top: 7px;
   
 }
 .allmenu ul ul ul li{
