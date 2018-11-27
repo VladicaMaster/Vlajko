@@ -650,17 +650,19 @@ background: none;
   }
   .show-menu3{
     display: block;
-    top: 7px;
-    right: -15px;
+    top: 0px;
+    right: -20px;
     padding-bottom: 0;
+    padding: 7px;
     position: absolute;
   }
 
   .show-menu4{
     display: block;
-    top: 7px;
-    right: -15px;
+    top: 0px;
+    right: -20px;
     padding-bottom: 0;
+    padding: 7px;
     position: absolute;
   }
 
@@ -758,7 +760,7 @@ input[type=checkbox]:checked ~ #menu li{
   position:relative;
   padding-bottom: 0;
  left:-10px;
- top: 10px;
+ top: 5px;
   margin-bottom: 0;
 }
 
