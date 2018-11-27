@@ -140,37 +140,3 @@ $(window).on("load",function() {
     })
   });
 
-/*
-#!/bin/bash
-SAVEIFS=$IFS
-IFS=$(echo -en "\n\b")
-
-if [[ $# -lt 1 ]] || [[ $# -gt 2 ]];
-then
-  echo "Usage $0 <directory> [<backupdir>]"
-  exit
-fi
-
-for FILENAME in $(find $1 -regex ".*\.\(jpg\|gif\|png\|jpeg\)");
-do
-  MIME=$(file --mime-type "$FILENAME" | awk '{print $NF}')
-  if [ "$MIME" == "application/octet-stream" ]
-  then
-    echo "$FILENAME has mime type $MIME:"
-    if [[ ! -z $2 ]];
-    then
-      echo "  - Creating backup"
-      cp "$FILENAME" "$2"
-    fi
-    echo "  - Running convert"
-    convert "$FILENAME" "$FILENAME"
-    if [[ $? -eq 0 ]];
-    then
-      echo "  - Done!"
-    else
-      echo "  - Error!"
-      echo "$FILENAME" >> errors.txt
-    fi
-  fi
-done
-IFS=$SAVEIFS*/
