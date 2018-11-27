@@ -879,8 +879,7 @@ h2{
 
 #pagination{
 
-  bottom: 10%;
- left: 39%;
+  display: none;
 }
 
 .sections {
