@@ -416,7 +416,21 @@ z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%
+   width: 100%;
+    -webkit-animation: mymove 1s ; /* Safari 4.0 - 8.0 */
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 1s ;
+    
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 50%;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 50%;}
 }
 .centered h1, .centered h2{
   color: white;
@@ -621,6 +635,8 @@ background: none;
 .bottomTape img{
   width: 100%;
 }
+
+
 
 
 
