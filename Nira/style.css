@@ -10,8 +10,9 @@ body {
 a, p, h1,h2,h3,h4,li{
   font-family: 'Montserrat', sans-serif;
 }
-h1,h2,h3,h4{
-  font-weight: 900;
+
+h2,h3,h4{
+  font-weight: 700;
 }
 p{
   font-family:'Montserrat', sans-serif, Regular 400;
@@ -22,7 +23,7 @@ h4{
 h1{
 
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 a{
@@ -75,12 +76,13 @@ a{
   text-decoration: underline;
 }
 header{
+
   position: fixed;
-  top: 27px;
+  top: 17px;
   width: 100%;
   background-color: black;
-  height: 45px;
-  z-index: 2;
+  height: 55px;
+  z-index: 1;
 
 }
 footer{
@@ -98,7 +100,7 @@ header a,footer a{
 #logo, #logo1{
   width: 100px;
   position: absolute;
-  top: 8%;
+ top: 10px;
   left: 0;
 }
 #logo img, #logo1 img{
@@ -148,7 +150,7 @@ input[type=checkbox]:checked ~ #menu4{
 
 .allmenu{
 position: absolute;
-top: -8px;
+
 right: 0;
 
 z-index: 1;
@@ -322,6 +324,7 @@ z-index: 1;
 
 .mySlides{
   width: 100%;
+  margin-bottom: 90px;
 }
 
 
@@ -359,6 +362,7 @@ z-index: 1;
   position: absolute;
   bottom: 10%;
  left: 45%;
+ transform: translate(-10%, -45%);
 }
 
 /* Position the "next button" to the right */
@@ -635,10 +639,85 @@ background: none;
 .bottomTape img{
   width: 100%;
 }
+#front{
+  width: 100%
+  height:auto;
+  position: relative;
+  top: 70px;
+}
+#front img{
+  width: 100%;
+}
+#frontText{
+  position: absolute;
+    top: 45%;
+   left: 50%;
+    transform: translate(-50%, -45%);
+   
+    width: 1280px;
+}
+#frontText h1{
+  text-align: right;
+  color: white;
+}
+#clients{
+  width: 1280px;
+  margin: auto;
+  margin-top: 150px;
+  position: relative;
+}
 
+.headline h2{
+  color: black;
+  font-weight: 800;
+  text-align: left;
+}
 
+.headline{
 
+  display: inline-block;
+  width: 100%;
+}
+.gray{
+  width: 92%;
+  height: 5px;
+  background-color:#a9b4c6;
+  position: absolute;
+  right: 0;
+  top: 54%;
+}
 
+.sponsors{
+  width: 300px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.sponsors img{
+  width: 100%;
+}
+.line{
+  position: relative;
+  margin-top: 0px;
+}
+#gray2{
+  width: 95.5%;
+}
+#gray3{
+  width: 87%;
+}
+#gray4{
+  width: 85.5%;
+}
+
+#gray5{
+  width: 88%;
+}
+#gray6{
+  width: 87.5%;
+}
+.sponsorsLeft{
+  margin-left: 35px;
+}
 
 
 @media screen and (max-width : 761px) {
