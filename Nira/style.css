@@ -492,7 +492,7 @@ margin-bottom: -5px;
 .welcome button:hover{
   cursor: pointer;
 }
-.gray{
+.graying{
   color: #333333;
 }
 .v-centered {
@@ -660,11 +660,20 @@ background: none;
   text-align: right;
   color: white;
 }
+#frontVojna{
+  width: 1280px;
+  margin: auto;
+  margin-top: 180px;
+}
+#frontVojna img{
+  width: 100%;
+}
 #clients{
   width: 1280px;
   margin: auto;
   margin-top: 150px;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .headline h2{
@@ -719,6 +728,68 @@ background: none;
   margin-left: 35px;
 }
 
+.toTop{
+
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
+}
+.toTop img{
+  width: 100%;
+}
+#vojnaText{
+  width: 1280px;
+  margin: auto;
+  margin-top: 60px;
+
+}
+#vojnaText p{
+  padding-bottom: 11px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+#vojnaText1{
+  width: 70%;
+  
+
+}
+.vojna1{
+  display: inline-block;
+}
+#vojnaText2{
+  width: 29%;
+  vertical-align: top;
+  padding-top: 6px;
+  border-left: 1px solid black;
+}
+#vojnaText2 p{
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+#vojnaText2 h4{
+   padding-left: 10px;
+   margin-bottom: -10px;
+   color: black;
+
+}
+#leftRight{
+  width: 1280px;
+  margin: auto;
+  position: relative;
+  margin-top: 60px;
+}
+.directions{
+  display: inline-block;
+  cursor: pointer;
+}
+#leftDirection{
+  position: absolute;
+  left: 0;
+}
+#rightDirection{
+  position: absolute;
+  right: 0;
+}
 
 @media screen and (max-width : 761px) {
  header{
@@ -996,6 +1067,44 @@ top: 5px;
   top: 17px;
   left: 45%;
   width: 50px
+}
+#front{
+  
+  top: 41px;
+}
+#clients{
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.gray{
+  width: 85%;
+}
+#gray2{
+  width: 91%;
+}
+#gray3{
+  width: 75%;
+}
+#gray4{
+  width: 72%;
+}
+#gray5{
+  width: 78%;
+}
+#gray6{
+  width: 77%;
+}
+.sponsorsLeft{
+  margin-left: 0;
+  width: 100%;
+  margin: auto;
+}
+#frontText{
+  width: 85%;
 }
 
 footer{
