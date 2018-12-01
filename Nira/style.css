@@ -2,8 +2,6 @@
 
 
 body {
-  font-family: Verdana;
- 
   margin:0;
   padding: 0;
 }
@@ -37,7 +35,7 @@ a{
 .top{
   width: 100%;
   height: auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 1;
   margin-top: 0;
@@ -78,10 +76,10 @@ a{
 header{
 
   position: fixed;
-  top: 17px;
+  top: 0px;
   width: 100%;
   background-color: black;
-  height: 55px;
+  height: 65px;
   z-index: 1;
 
 }
@@ -98,9 +96,9 @@ header a,footer a{
 }
 
 #logo, #logo1{
-  width: 100px;
+  width: 8%;
   position: absolute;
- top: 10px;
+ top: 25px;
   left: 0;
 }
 #logo img, #logo1 img{
@@ -150,7 +148,7 @@ input[type=checkbox]:checked ~ #menu4{
 
 .allmenu{
 position: absolute;
-
+top: 15px;
 right: 0;
 
 z-index: 1;
@@ -317,10 +315,6 @@ z-index: 1;
   line-height: 24px;
 
 }
-.fa-bars:hover{
-  color: white;
-  
-}
 
 .mySlides{
   width: 100%;
@@ -361,7 +355,7 @@ z-index: 1;
 #pagination{
   position: absolute;
   bottom: 10%;
- left: 45%;
+ left: 46%;
  transform: translate(-10%, -45%);
 }
 
@@ -495,18 +489,22 @@ margin-bottom: -5px;
 .graying{
   color: #333333;
 }
-.v-centered {
+.miniSlider{
+  width: 1280px;
+  margin: auto;
+}
+.carusel {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1280px;
- padding-top: 90px;
+  max-width: 1280px;
+
   margin: auto;
 }
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 95%;
+  width: 1280px;
 }
 .roll {
   position: relative;
@@ -515,11 +513,11 @@ margin-bottom: -5px;
   left:  0px;
 }
 .project {
-  width: 24.2%;
+  
   height: auto;
   background-color: black;
   text-align: center;
-  margin: 0 10px 15px 0;
+ width: 25%;
   display: inline-block;
   font-size: 18px;
   padding-top: 0;
@@ -643,7 +641,7 @@ background: none;
   width: 100%
   height:auto;
   position: relative;
-  top: 70px;
+  top: 65px;
 }
 #front img{
   width: 100%;
@@ -726,6 +724,7 @@ background: none;
 }
 .sponsorsLeft{
   margin-left: 35px;
+
 }
 
 .toTop{
@@ -736,6 +735,9 @@ background: none;
 }
 .toTop img{
   width: 100%;
+}
+.vojnaLinks{
+  
 }
 #vojnaText{
   width: 1280px;
@@ -750,17 +752,22 @@ background: none;
 }
 #vojnaText1{
   width: 70%;
-  
+  border-right: 1px solid black
 
 }
 .vojna1{
   display: inline-block;
 }
+.vojna1 iframe{
+  width: 95%;
+  height: 500px;
+
+}
 #vojnaText2{
   width: 29%;
   vertical-align: top;
   padding-top: 6px;
-  border-left: 1px solid black;
+  
 }
 #vojnaText2 p{
   padding-bottom: 10px;
@@ -793,16 +800,16 @@ background: none;
 
 @media screen and (max-width : 761px) {
  header{
-    top: 6px;
+    top: 0px;
     height: 35px;
-
+    margin-top: 0;
   }
 
   .show-menu {
        display:block;
       
        position: absolute;
-       top: -10px;
+       top: -5px;
        right: 2%;
       
        margin-right: 20px;
@@ -841,16 +848,17 @@ background: none;
 }
 
   .top{
-  
+    top: -4px;
     margin-top: 0;
-    top:-8px;
+
+   
   }
 
   
 #logo{
   width: 55px;
 
-  top: 5px;
+  top: 10px;
   left: 5%;
   
 }
@@ -1065,12 +1073,12 @@ top: 5px;
 #logo1{
   position: absolute;
   top: 17px;
-  left: 45%;
+  left: 44%;
   width: 50px
 }
 #front{
   
-  top: 41px;
+  top: 33px;
 }
 #clients{
   width: 95%;
@@ -1081,27 +1089,25 @@ top: 5px;
 }
 
 .gray{
-  width: 85%;
+  width: 82%;
 }
 #gray2{
-  width: 91%;
+  width: 88%;
 }
 #gray3{
-  width: 75%;
-}
-#gray4{
   width: 72%;
 }
+#gray4{
+  width: 69%;
+}
 #gray5{
-  width: 78%;
+  width: 75%;
 }
 #gray6{
-  width: 77%;
+  width: 74%;
 }
 .sponsorsLeft{
-  margin-left: 0;
-  width: 100%;
-  margin: auto;
+  margin-left: 50px;
 }
 #frontText{
   width: 85%;
@@ -1112,15 +1118,26 @@ footer{
   height: 55px;
 
 }
+
 }
 
 
-@media screen and (max-width: 950px) {
-    .carousel {
-    position: relative;
-    overflow: hidden;
-    width: 620px;
-  }
+@media screen and (min-width: 1450px) {
+   header{
+    height: 75px;
+    padding-bottom: 0;
+   }
+   #logo{
+ z-index: 2;
+ top: 32px;
+ 
+}
+.allmenu{
+top: 23px;
+padding-bottom: 0;
+margin-bottom: 0;
+
+}
 }
 @media screen and (max-width: 655px) {
     .carousel {
