@@ -1,9 +1,11 @@
 
 //slider
+var stp;
 function loadSlider(){
 
-  setInterval(function(){showSlides(slideIndex += 1)}, 4000)
+  stp=setInterval(function(){showSlides(slideIndex += 1)}, 4000)
 }
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -38,8 +40,12 @@ function showSlides(n) {
 
 
 
+function StopFunction()
+{
+  clearInterval(stp);
+}
 
-
+document.getElementById('stop').addEventListener('mouseleave', loadSlider)
 
 $(window).on("load",function() {
     $(".centered").css("display", "none");

@@ -5,7 +5,7 @@ body {
   margin:0;
   padding: 0;
 }
-a, p, h1,h2,h3,h4,li{
+a, p, h1,h2,h3,h4,li,button{
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -399,6 +399,7 @@ z-index: 1;
   animation-duration: 1.5s;
 }
 
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -409,26 +410,29 @@ z-index: 1;
   to {opacity: 1}
 }
 
+
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
    width: 100%;
-    -webkit-animation: mymove 1s ; /* Safari 4.0 - 8.0 */
+    -webkit-animation: mymove 2s ; /* Safari 4.0 - 8.0 */
     /* Safari 4.0 - 8.0 */
-    animation: mymove 1s ;
+    animation: mymove 2s ;
     
 }
 
 @-webkit-keyframes mymove {
     from {left: 0px;}
     to {left: 50%;}
+    
 }
 
 @keyframes mymove {
-    from {left: 0px;}
-    to {left: 50%;}
+   0%   {left: 0px;}
+    50%  {left: 50%;}
+     
 }
 .centered h1, .centered h2{
   color: white;
@@ -737,7 +741,17 @@ background: none;
   width: 100%;
 }
 .vojnaLinks{
-  
+  position: relative;
+  top: 120px;
+}
+#vojnaLinks1{
+color: #b2b2b2;
+}
+.vojnaLinks a{
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+  margin-right: 20px;
 }
 #vojnaText{
   width: 1280px;
@@ -752,16 +766,33 @@ background: none;
 }
 #vojnaText1{
   width: 70%;
-  border-right: 1px solid black
-
+ 
+  position:relative;
+  padding-left: 15px;
 }
 .vojna1{
   display: inline-block;
 }
 .vojna1 iframe{
-  width: 95%;
+  width: 98%;
   height: 500px;
 
+}
+#shadowLeft{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+
+}
+#shadowRight{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 500px;
+}
+#shadowLeft img{
+  width: 100%;
 }
 #vojnaText2{
   width: 29%;
@@ -771,10 +802,10 @@ background: none;
 }
 #vojnaText2 p{
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 #vojnaText2 h4{
-   padding-left: 10px;
+   padding-left: 15px;
    margin-bottom: -10px;
    color: black;
 
@@ -783,7 +814,7 @@ background: none;
   width: 1280px;
   margin: auto;
   position: relative;
-  margin-top: 60px;
+  margin-top: 180px;
 }
 .directions{
   display: inline-block;
@@ -796,6 +827,55 @@ background: none;
 #rightDirection{
   position: absolute;
   right: 0;
+}
+
+.gir{
+  position: relative;
+  top: 100px;
+  width: 805px;
+  margin: auto;
+  margin-bottom: 300px;
+}
+.gir button{
+  height: 60px;
+  color: black;
+  font-weight: 800;
+  font-size: 40px;
+  background: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+.girList{
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.girHeadline{
+  display: none;
+  border-bottom: 1px solid black;
+}
+#girImg{
+  width: 281px;
+}
+#girImg img{
+  width: 100%;
+}
+#girLi{
+  width: 480px;
+
+}
+#girLi li{
+  text-align: left;
+  font-size: 14px;
+}
+#girLi p{
+  text-align: left;
+  padding-left: 20px;
 }
 
 @media screen and (max-width : 761px) {
@@ -848,7 +928,7 @@ background: none;
 }
 
   .top{
-    top: -4px;
+    top: -6px;
     margin-top: 0;
 
    
@@ -995,7 +1075,7 @@ h2{
 
 .slideshow-container {
  margin-top: 0;
-  top: 40px;
+  top: 35px;
 
 }
 .centered button{
@@ -1117,6 +1197,39 @@ footer{
 
   height: 55px;
 
+}
+#vojnaText{
+  width: 100%;
+  margin: auto;
+  margin-top: 60px;
+
+}
+#frontVojna{
+  width: 100%;
+   margin-top: 90px;
+}
+#vojnaText1{
+  width: 100%;
+}
+#vojnaText2{
+  width: 100%;
+}
+
+.vojna1 iframe{
+  width: 97%;
+  height: 250px;
+
+}
+#leftRight{
+  width: 100%;
+}
+.vojnaLinks{
+  position: relative;
+  top: 60px;
+}
+#leftRight{
+
+  margin-top: 60px;
 }
 
 }
