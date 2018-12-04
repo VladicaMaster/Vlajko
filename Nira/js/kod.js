@@ -1,9 +1,10 @@
 
 //slider
 var stp;
+var fadeOut;
 function loadSlider(){
 
-  stp=setInterval(function(){showSlides(slideIndex += 1)}, 4000)
+  stp=setInterval(function(){showSlides(slideIndex += 1)}, 5000)
 }
 
 
@@ -26,7 +27,8 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-  
+     fadeOut =  setTimeout(fading, 2500);
+      setTimeout(fadeIng, 5000);
       slides[i].style.display = "none";  
   }
   /*
@@ -43,15 +45,31 @@ function showSlides(n) {
 function StopFunction()
 {
   clearInterval(stp);
+
 }
 
 document.getElementById('stop').addEventListener('mouseleave', loadSlider)
 
-$(window).on("load",function() {
-    $(".centered").css("display", "none");
-    //call the image with fadeIn effect
-    $(".centered").slideDown(1000 , function(){
-        $(this).css("display","normal");
-    })
-  });
+
+function fading (){
+$(".centered").hide()}
+
+function fadeIng(){
+  $(".centered").show()
+}
+
+function fade(){
+  clearInterval(fadeOut);
+}
+
+//document.getElementById('stop').addEventListener('mouseover',fade)
+
+
+
+
+
+
+
+
+
 

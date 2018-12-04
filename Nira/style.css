@@ -112,7 +112,7 @@ header a,footer a{
   
   font-weight: 500;
   font-size: 14px;
-  margin-left: 46px;
+  margin-left: 50px;
 }
 
 #menu li ul li a{
@@ -279,7 +279,7 @@ z-index: 1;
   display: inline-block;
 }
 #newsLi{
-  width: 130px;
+  width: 140px;
 }
 
 .show-menu , .show-menu2 {
@@ -355,8 +355,8 @@ z-index: 1;
 #pagination{
   position: absolute;
   bottom: 10%;
- left: 46%;
- transform: translate(-10%, -45%);
+ left: 47%;
+ transform: translate(-10%, -47%);
 }
 
 /* Position the "next button" to the right */
@@ -444,14 +444,22 @@ z-index: 1;
 }
 .centered button{
   position: absolute;
-  left: 45%;
+  left: 46%;
   background: none;
   color: white;
-  padding: 8px;
-  border: 1px solid white;outline: none;
+  padding: 10px;
+  border: 1px solid white;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: .4s ease-in-out;
 }
+
 .centered button:hover {
   cursor: pointer;
+  background: white;
+  color: black;
+  opacity: 0.9;
 }
 
 .centerText h4{
@@ -462,6 +470,7 @@ margin-bottom: -5px;
   width: 1280px;
   margin: auto;
  margin-top: 50px;
+ margin-bottom: 50px;
 }
 .welcome{
   display: inline-block;
@@ -479,55 +488,49 @@ margin-bottom: -5px;
   color: #333333;
 }
 .welcome button{
-
-
+  transition: .4s ease-in-out;
+  font-size: 14px;
   background: none;
   color: black;
-  padding: 5px;
+  padding: 6px;
   border: 1px solid black;
   outline: none;
 }
 .welcome button:hover{
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 .graying{
   color: #333333;
 }
-.miniSlider{
-  width: 1280px;
-  margin: auto;
-}
+
 .carusel {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1280px;
-
+ padding-bottom: 30px;
   margin: auto;
 }
-.carousel {
-  position: relative;
-  overflow: hidden;
-  width: 1280px;
-}
-.roll {
-  position: relative;
-  white-space: nowrap;
-  font-size: 0;
-  left:  0px;
-}
+
 .project {
   
   height: auto;
   background-color: black;
   text-align: center;
- width: 25%;
+ width: 24%;
   display: inline-block;
   font-size: 18px;
   padding-top: 0;
   position: relative;
   -webkit-transition: .7s ease;
   transition: .7s ease-in-out;
+  margin: 7px;
+}
+.slick-arrow button{
+  z-index: 3;
+  display: block;
 }
 
 .project img {
@@ -542,6 +545,10 @@ margin-bottom: -5px;
   cursor: pointer;
    bottom: 0;
   height: 100%;
+}
+.slick-next{
+color: black;
+z-index: 1;
 }
 
 .project img {
@@ -575,54 +582,8 @@ margin-bottom: -5px;
   opacity: 1;
 }
 
-.sections {
- 
-  text-align: center;
-  color: lightgray;
-  font-size: 12px;
-}
 
-.sections i {
-  margin: 0 2px;
-  cursor: pointer;
-}
 
-.navigation {
-  position:  relative;
-  border: none;
-  padding: 0;
-  background-color: rgba(35,35,35,0.8);
-  height: 34px;
-  width: 34px;
-  color:  #FFF;
-  font-size: 20px;
-  text-align: center;
-  -webkit-transition: .6s ease-in-out;
-  z-index: 10;
- cursor: pointer;
-}
-
-.navigation:visited  {
-  text-decoration: none;
-}
-
-.navigation:active {
-  text-decoration: none;
-}
-.navigation:focus {
-  outline: none;
-}
-.navigation:first-of-type {
-color: gray;
-background: none;
-margin-right: 5px;
-
-}
-.navigation:last-of-type {
-margin-left: 5px;
-color: gray;
-background: none;
-}
 
 
 .bottomFooter{
@@ -834,11 +795,14 @@ color: #b2b2b2;
   top: 100px;
   width: 805px;
   margin: auto;
-  margin-bottom: 300px;
+  margin-bottom: 60px;
+}
+#equipment{
+  margin-bottom: 200px;
 }
 .gir button{
   height: 60px;
-  color: black;
+  color: #adadad;
   font-weight: 800;
   font-size: 40px;
   background: none;
@@ -847,33 +811,37 @@ color: #b2b2b2;
   width: 100%;
   cursor: pointer;
   outline: none;
+
 }
-.girList{
+.gir button:focus, .gir button:hover{
+  color: black;
+}
+.girList, .girList1, .girList2{
   display: inline-block;
   margin-right: 20px;
   vertical-align: middle;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.girHeadline{
+.girHeadline, .girHeadline1, .girHeadline2{
   display: none;
   border-bottom: 1px solid black;
 }
-#girImg{
+#girImg, #girImg1, #girImg2{
   width: 281px;
 }
-#girImg img{
+#girImg img, #girImg1 img, #girImg2 img{
   width: 100%;
 }
-#girLi{
+#girLi, #girLi1, #girLi2{
   width: 480px;
 
 }
-#girLi li{
+#girLi li, #girLi1 li, #girLi2 li{
   text-align: left;
   font-size: 14px;
 }
-#girLi p{
+#girLi p, #girLi1 p, #girLi2 p{
   text-align: left;
   padding-left: 20px;
 }
@@ -1232,6 +1200,11 @@ footer{
   margin-top: 60px;
 }
 
+#girLi, #girLi1, #girLi2{
+  width: 90%;
+
+}
+
 }
 
 
@@ -1252,10 +1225,70 @@ margin-bottom: 0;
 
 }
 }
-@media screen and (max-width: 655px) {
-    .carousel {
-    position: relative;
-    overflow: hidden;
-    width: 310px;
+@media screen and (max-width: 1280px) {
+    .middle{
+  width: 100%;
+ 
+
+}
+#welcome1{
+  width: 100%;
+}
+.carusel{
+  width: 85%;
+}
+
+#frontText{
+
+   
+    width: 100%;
+}
+
+
+#frontVojna{
+  width: 100%;
+ 
+}
+#vojnaText{
+  width: 100%;
+ 
+
+}
+#leftRight{
+  width: 100%;
+ 
+}
+
+}
+
+@media screen and (max-width: 930px) {
+   #menu li a ,#menu1 li a {
+  
+  
+  margin-left: 20px;
+}
+
+.vojna1 iframe{
+ 
+  height: 300px;
+
+}
+
+.gir{
+  
+  width: 90%;
+  margin-bottom: 30px;
+ 
+}
+.gir button{
+  height: 30px;
+  
+  font-size: 20px;
+  }
+  .toTop{
+    margin-bottom: 75px;
   }
 }
+
+
+
