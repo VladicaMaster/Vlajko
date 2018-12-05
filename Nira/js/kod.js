@@ -2,6 +2,8 @@
 //slider
 var stp;
 var fadeOut;
+var fadeIn;
+
 function loadSlider(){
 
   stp=setInterval(function(){showSlides(slideIndex += 1)}, 5000)
@@ -27,8 +29,8 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-     fadeOut =  setTimeout(fading, 2500);
-      setTimeout(fadeIng, 5000);
+     fadeOut =  setTimeout(fading, 3000);
+      fadeIn = setTimeout(fadeIng, 5000);
       slides[i].style.display = "none";  
   }
   /*
@@ -44,7 +46,10 @@ function showSlides(n) {
 
 function StopFunction()
 {
-  clearInterval(stp);
+   clearTimeout(fadeOut);
+   clearTimeout(fadeIn);
+   clearInterval(stp);
+  
 
 }
 
@@ -58,11 +63,6 @@ function fadeIng(){
   $(".centered").show()
 }
 
-function fade(){
-  clearInterval(fadeOut);
-}
-
-//document.getElementById('stop').addEventListener('mouseover',fade)
 
 
 
