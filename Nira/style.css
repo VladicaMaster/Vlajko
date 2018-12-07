@@ -437,7 +437,7 @@ z-index: 1;
 .centered h1, .centered h2{
   color: white;
   text-align: center;
-   text-shadow: 2px 2px #808080;
+   text-shadow: 4px 4px 6px #696969;
 
 }
 .centered h1{
@@ -502,8 +502,9 @@ margin-bottom: -5px;
 }
 .welcome button:hover{
   cursor: pointer;
-  background-color: black;
+  background-color: #333333;
   color: white;
+  border: 1px solid #333333;
 }
 .graying{
   color: #333333;
@@ -531,6 +532,13 @@ margin-bottom: -5px;
   -webkit-transition: .7s ease;
   transition: .7s ease-in-out;
   margin: 7px;
+}
+.project a{
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 10px;
+  padding-bottom: 1px;
 }
 .slick-arrow button{
   z-index: 3;
@@ -567,8 +575,11 @@ z-index: 1;
   white-space: normal;
   color: white;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
 
+}
+.project h4{
+  font-size: 20px;
 }
 .centerText {
     position: absolute;
@@ -585,8 +596,6 @@ z-index: 1;
 .centerText:hover {
   opacity: 1;
 }
-
-
 
 
 
@@ -813,6 +822,7 @@ color: #b2b2b2;
   color: #adadad;
   font-weight: 800;
   font-size: 36px;
+  line-height: 36px;
   background: none;
   border: none;
   width: 100%;
@@ -855,78 +865,6 @@ color: #b2b2b2;
   text-align: left;
   padding-left: 20px;
 }
-.wrapper{
-  margin-top: 20px;
-  width: 120px;
-}
-.button12 {
-   font-family: 'Montserrat', sans-serif;
-  cursor: pointer;
-  background-color: #000;
-  width: 30px;
-  height: 20px;
-  padding:5px 5px;
-  text-align: center;
-  position: relative;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  z-index: 0;
-  background:none;
-  margin-left:0px;
-
-  color: black;
-  border: 1px solid black;
-  font-size: 16px;
-}
-.button12 span {
-  color: black;
-  display: inline-block;
- 
-  
-  
-  transform: scaleX(0.6);
-  
-  transform-origin: center left;
-  transition: color 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.button12:before,
-.button12:after {
-
-  content: '';
-  background: black;
-  height: 50%;
-  width: 0;
-  position: absolute;
-  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -webkit-transition:0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.button12:before {
-  top: 0;
-  left: 0;
-  right: auto;
-}
-.button12:after {
-  bottom: 0;
-  right: 0;
-  left: auto;
-}
-.button12:hover:before {
-  width: 100%;
-  right: 0;
-  left: auto;
-}
-.button12:hover:after {
-  width: 100%;
-  left: 0;
-  right: auto;
-}
-.button12:hover span {
-  color: white;
-}
-
 
 .socials{
   position: absolute;
@@ -936,6 +874,154 @@ color: #b2b2b2;
 .socials i{
   color: white;
   cursor: pointer;
+}
+
+.map{
+  position: relative;
+  top: 160px;
+  width: 1280px;
+  margin: auto;
+ 
+}
+.map iframe{
+  margin: auto;
+  width: 1280px;
+  height: 400px;
+}
+#contactForm{
+  position: relative;
+  top: 200px;
+  width: 1280px;
+  margin: auto;
+
+}
+#contactForm h3{
+  margin-bottom: -13px;
+  padding-top: 10px;
+}
+.socials1 i{
+  color: #949599;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+#contactForm a{
+ font-family: 'Montserrat', sans-serif;
+ text-decoration: none;
+ color: black;
+}
+.adress{
+  display: inline-block;
+  vertical-align: top;
+}
+#adress1{
+ 
+  width: 39%;
+}
+
+.container1 {
+ 
+  width:60%;
+  margin:0 auto;
+  position:absolute;
+  top: 0;
+  right: 0;
+ 
+ 
+}
+#field1{
+  margin-right: 23px;
+}
+
+#halfForm{
+  width: 100%;
+}
+.field{
+  width: 48.1%;
+  display: inline-block;
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { 
+  font:700 12px/16px 'Montserrat', sans-serif; 
+  color:#938f8f;
+   }
+
+#contact {
+  
+  padding-top:30px;
+ 
+}
+
+
+fieldset {
+  border: medium none  !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="message"], #contact input[type="url"], #contact textarea {
+  width:100%;
+  border: none;
+  background:#f5f6f7;
+  margin:0 0 5px;
+  padding:10px;
+  border-radius: 15px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+  
+}
+
+#contact textarea {
+  height:200px;
+  max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+  cursor:pointer;
+  width:15%;
+ background: #f5f6f7;
+  color:#938f8f;
+  outline: none;
+  margin: auto;
+  padding:5px;
+  font-size:15px;
+  border: none;
+  border-radius: 15px;
+  
+}
+
+#contact button[type="submit"]:hover {
+ 
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+  outline:0;
+  
+  
+}
+::-webkit-input-placeholder {
+ color:#888;
+
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+#contactFooter{
+  position: relative;
+ top: 500px;
 }
 
 @media screen and (max-width : 761px) {
@@ -1304,10 +1390,49 @@ footer{
   margin-top: 60px;
 }
 
-#girLi, #girLi1, #girLi2{
+#girLi, #girLi1, #girLi2, #girLi3{
   width: 90%;
 
 }
+.map{
+  width: 95%;
+  top: 120px;
+}
+.map iframe{
+  width: 100%;
+  height: 200px;
+}
+
+#contactForm{
+  
+  top: 200px;
+  width: 95%;
+  margin: auto;
+
+}
+
+#adress1{
+ 
+  width: 95%;
+}
+.container1 {
+  padding-top: 50px;
+    position: relative;
+  width:95%;
+  margin: auto;
+}
+#field1{
+  margin-right: 0px;
+}
+
+.field{
+  width: 100%;
+ 
+}
+#contactFooter{
+  top: 200px;
+}
+
 
 }
 
@@ -1363,6 +1488,25 @@ margin-bottom: 0;
  
 }
 
+.map{
+  width: 95%;
+  top: 120px;
+}
+.map iframe{
+  width: 100%;
+  height: 300px;
+}
+
+#contactForm{
+  
+  top: 200px;
+  width: 95%;
+  margin: auto;
+
+}
+
+
+
 }
 
 @media screen and (max-width: 930px) {
@@ -1392,6 +1536,44 @@ margin-bottom: 0;
   .toTop{
     margin-bottom: 75px;
   }
+
+  .map{
+  width: 95%;
+  top: 120px;
+}
+.map iframe{
+  width: 100%;
+  height: 200px;
+}
+
+#contactForm{
+  
+  top: 200px;
+  width: 95%;
+  margin: auto;
+
+}
+
+#adress1{
+ 
+  width: 95%;
+}
+.container1 {
+    position: relative;
+  width:95%;
+  margin: auto;
+}
+#field1{
+  margin-right: 0px;
+}
+
+.field{
+  width: 100%;
+ 
+}
+#contactFooter{
+  top: 200px;
+}
 }
 
 
