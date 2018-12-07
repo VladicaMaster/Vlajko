@@ -229,11 +229,11 @@ z-index: 1;
 }
 
 
-
 .allmenu ul ul li 
 {
+  text-align: left;
   float:none;
-  width:140px;
+  width:190px;
   padding: 10px 5px 6px 5px;
     border-right: none;
    z-index: 1;
@@ -270,7 +270,7 @@ z-index: 1;
 #arrow1, #arrow2{
   position: absolute;
   right: 0;
-  bottom: 8px;
+  bottom: 5px;
   padding-right: 8px;
 }
 
@@ -437,12 +437,14 @@ z-index: 1;
 .centered h1, .centered h2{
   color: white;
   text-align: center;
+   text-shadow: 2px 2px #808080;
 
 }
 .centered h1{
-  line-height: 0px;
+  line-height: 10px;
 }
 .centered button{
+
   position: absolute;
   left: 46%;
   background: none;
@@ -452,14 +454,16 @@ z-index: 1;
   outline: none;
   font-size: 15px;
   font-weight: 700;
-  transition: .4s ease-in-out;
+  cursor: pointer;
+   text-shadow: 2px 2px #808080;
+   transition: .4s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.centered button:hover {
-  cursor: pointer;
+.centered button:hover{
   background: white;
   color: black;
-  opacity: 0.9;
+  text-shadow: none;
 }
 
 .centerText h4{
@@ -626,7 +630,7 @@ z-index: 1;
 #frontVojna{
   width: 1280px;
   margin: auto;
-  margin-top: 135px;
+  margin-top: 65px;
 }
 #frontVojna img{
   width: 100%;
@@ -703,7 +707,7 @@ z-index: 1;
 }
 .vojnaLinks{
   position: relative;
-  top: 120px;
+  top: 30px;
 }
 #vojnaLinks1{
 color: #b2b2b2;
@@ -727,16 +731,16 @@ color: #b2b2b2;
 }
 #vojnaText1{
   width: 70%;
- 
+  padding-right: 25px;
   position:relative;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 .vojna1{
   display: inline-block;
 }
 .vojna1 iframe{
-  width: 98%;
-  height: 500px;
+  width: 100%;
+  height: 450px;
 
 }
 #shadowLeft{
@@ -759,14 +763,14 @@ color: #b2b2b2;
   width: 29%;
   vertical-align: top;
   padding-top: 6px;
-  
+   padding-left: 13px;
 }
 #vojnaText2 p{
   padding-bottom: 10px;
-  padding-left: 15px;
+ 
 }
 #vojnaText2 h4{
-   padding-left: 15px;
+   
    margin-bottom: -10px;
    color: black;
 
@@ -795,7 +799,7 @@ color: #b2b2b2;
   top: 100px;
   width: 805px;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 #equipment{
   margin-bottom: 200px;
@@ -805,10 +809,10 @@ color: #b2b2b2;
 }
 
 .gir button{
-  height: 60px;
+  height: 50px;
   color: #adadad;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 36px;
   background: none;
   border: none;
   width: 100%;
@@ -819,112 +823,123 @@ color: #b2b2b2;
 .gir button:focus, .gir button:hover{
   color: black;
 }
-.girList, .girList1, .girList2{
+.girList, .girList1, .girList2, .girList3{
   display: inline-block;
   margin-right: 20px;
   vertical-align: middle;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.girHeadline, .girHeadline1, .girHeadline2{
+.girHeadline, .girHeadline1, .girHeadline2, .girHeadline3{
   display: none;
   border-bottom: 1px solid black;
 }
 .noBorder{
   border: none;
 }
-#girImg, #girImg1, #girImg2{
+#girImg, #girImg1, #girImg2, #girImg3{
   width: 281px;
 }
-#girImg img, #girImg1 img, #girImg2 img{
+#girImg img, #girImg1 img, #girImg2 img, #girImg3 img{
   width: 100%;
 }
-#girLi, #girLi1, #girLi2{
+#girLi, #girLi1, #girLi2, #girLi3{
   width: 480px;
 
 }
-#girLi li, #girLi1 li, #girLi2 li{
+#girLi li, #girLi1 li, #girLi2 li, #girLi3 li{
   text-align: left;
   font-size: 14px;
 }
-#girLi p, #girLi1 p, #girLi2 p{
+#girLi p, #girLi1 p, #girLi2 p, #girLi3 p{
   text-align: left;
   padding-left: 20px;
 }
-.fill:hover, .fill:focus {
-  box-shadow: inset 0 0 0 2em var(--hover);
+.wrapper{
+  margin-top: 20px;
+  width: 120px;
 }
-.pulse:hover, .pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+.button12 {
+   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background-color: #000;
+  width: 30px;
+  height: 20px;
+  padding:5px 5px;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 0;
+  background:none;
+  margin-left:0px;
+
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.button12 span {
+  color: black;
+  display: inline-block;
+ 
+  
+  
+  transform: scaleX(0.6);
+  
+  transform-origin: center left;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
+.button12:before,
+.button12:after {
+
+  content: '';
+  background: black;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition:0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-.close:hover, .close:focus {
-  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+.button12:before {
+  top: 0;
+  left: 0;
+  right: auto;
 }
-.raise:hover, .raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+.button12:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
 }
-.up:hover, .up:focus {
-  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+.button12:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
 }
-.slide:hover, .slide:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+.button12:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
-.offset {
-  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
-}
-.offset:hover, .offset:focus {
-  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
-}
-.fill {
-  --color: #a972cb;
-  --hover: #cb72aa;
-}
-.pulse {
-  --color: #ef6eae;
-  --hover: #ef8f6e;
-}
-.close {
-  --color: #ff7f82;
-  --hover: #ffdc7f;
-}
-.raise {
-  --color: #ffa260;
-  --hover: #e5ff60;
-}
-.up {
-  --color: #e4cb58;
-  --hover: #94e458;
-}
-.slide {
-  --color: #8fc866;
-  --hover: #66c887;
-}
-.offset {
-  --color: #19bc8b;
-  --hover: #1973bc;
+.button12:hover span {
+  color: white;
 }
 
 
-code {
-  color: #e4cb58;
-  font: inherit;
+.socials{
+  position: absolute;
+  top: 60px;
+  right: 30px;
 }
-
-@keyframes slidebg {
-  to {
-    background-position:20vw;
-  }
+.socials i{
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width : 761px) {
+ 
  header{
     top: 0px;
     height: 35px;
@@ -998,7 +1013,7 @@ code {
 
 
   #menu{
- width: 220px;
+ width: 270px;
  position: absolute;
  left: 0;
  
@@ -1015,7 +1030,7 @@ code {
 
 .allmenu{
     margin-top: 13px;
-      width: 200px;
+      width: 250px;
      height: auto;
      opacity: 0.95;
     right:8%;
@@ -1062,21 +1077,22 @@ input[type=checkbox]:checked ~ #menu li{
   display:none;
   position:relative;
   padding-bottom: 0;
- left:-10px;
+ left:-5px;
  top: 5px;
   margin-bottom: 0;
+
 }
 
 
 
-.allmenu ul ul li a
+.allmenu ul ul li 
 {
   padding: 0 0 0 0;
-  width: 130px;
- font-size: 6px;
+  width: 198px;
+
     display: block;
     text-align: left;
-  margin-left: -12px;
+ 
  
 }
 
@@ -1084,14 +1100,15 @@ input[type=checkbox]:checked ~ #menu li{
 {
   display:none;
   position:relative;
- left: -10px;
+ left: -12px;
   padding:0;
    opacity: 1;
  top: 7px;
   
 }
 .allmenu ul ul ul li{
-  width: 100px;
+  width: 220px;
+  text-align: left;
 }
 
 .dot {
@@ -1130,7 +1147,8 @@ h2{
   background: none;
   color: white;
   padding: 4px;
-  border: 1px solid white;outline: none;
+  border: 1px solid white;
+  outline: none;
   font-size: 10px;
 }
 
@@ -1199,8 +1217,16 @@ top: 5px;
 #logo1{
   position: absolute;
   top: 17px;
-  left: 44%;
+  left: 6%;
   width: 50px
+}
+ .socials{
+  
+  top: 18px;
+ right: 6%;
+}
+.socials i{
+  margin-left: 6px;
 }
 #front{
   
@@ -1252,7 +1278,7 @@ footer{
 }
 #frontVojna{
   width: 100%;
-   margin-top: 90px;
+   margin-top: 45px;
 }
 #vojnaText1{
   width: 100%;
@@ -1262,8 +1288,8 @@ footer{
 }
 
 .vojna1 iframe{
-  width: 97%;
-  height: 250px;
+  width: 100%;
+  height: 150px;
 
 }
 #leftRight{
@@ -1271,7 +1297,7 @@ footer{
 }
 .vojnaLinks{
   position: relative;
-  top: 60px;
+  top: 0px;
 }
 #leftRight{
 

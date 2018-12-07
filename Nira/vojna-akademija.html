@@ -15,9 +15,8 @@
 <body>
 
 <header>
-
 <div class="top">
-  <img src="images/lajsnaDole.jpg">
+    <img src="images/lajsnaDole.jpg">
 </div>
 <div class="middle" align="center">
     <div id="logo"><a href="index.html"><img src="images/logo_nira.png"></a></div>
@@ -30,32 +29,32 @@
   <div class="allmenu" align="center">
  
     <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu"> <a href="#start"></a>
+        <ul id="menu">
         <li >
-            <a href="index.html">POČETNA</a>  
+            <a href="index.html">PO&#268;ETNA</a>  
         </li>
-        
+       
         <li><a href="news.html">NOVOSTI</a></li>
         
-       
-         <li class="smallMenu "> 
-            <a href="production.html">PRODUKCIJA</a>
+      
+         <li class="smallMenu"> 
+            <a href="#">PRODUKCIJA</a>
                 <label for="show-menu2" class="show-menu2" >
        
                                        <i class="fa fa-angle-down"></i>
                                 </label>
                                 <input type="checkbox" id="show-menu2" role="button">
                 <ul id="menu2">
-                    <li class="smallMenu3 active">
-                        <a href="newProjects.html">NOVI PROJEKTI<span id="arrow1"><img src="images/strelica.png"></span></a>
+                    <li class="smallMenu3">
+                        <a href="#">NOVI PROJEKTI<span id="arrow1"><img src="images/strelica.png"></span></a>
                             <label for="show-menu3" class="show-menu3" >
        
                                        <i class="fa fa-angle-down"></i>
                                 </label>
                                 <input type="checkbox" id="show-menu3" role="button">
                         <ul id="menu3">
-                            <li>
-                                <a href="vojna-akademija2.html">FILM: VOJNA AKADEMIJA 2</a>
+                            <li class="active">
+                                <a href="vojna-akademija.html">FILM: VOJNA AKADEMIJA</a>
                             </li>
                              <li>
                                 <a href="vojna-akademija.html">SERIJA: VOJNA AKADEMIJA</a>
@@ -63,7 +62,7 @@
                         </ul>
                     </li>
                     <li class="smallMenu4">
-                        <a href="projekti.html">PROJEKTI<span id="arrow2"><img src="images/strelica.png"></span></a>
+                        <a href="#">STARI PROJEKTI<span id="arrow2"><img src="images/strelica.png"></span></a>
                          <label for="show-menu4" class="show-menu4" >
        
                                        <i class="fa fa-angle-down"></i>
@@ -87,14 +86,19 @@
                             <li>
                                 <a href="prag.html">PRAG I SRPSKI SLIKARI</a>
                             </li>
+
                         </ul>
                     </li>
+                  <li>
+                    <a href="commercial.html"> KOMERCIJALNI SPOTOVI</a>
+                    </li>
                 </ul>
+
          </li>
           <li>
             <a href="rent.html">NAJAM OPREME</a>
          </li>
-         <li>
+          <li>
             <a href="clients.html">KLIJENTI</a>  
         </li>
           <li>
@@ -115,10 +119,7 @@
     <img src="images/lajsnaDole.jpg">
 </div>
 </div>
-<div class="vojnaLinks" align="center">
-  <a href="#" >Vojna Akademija 1</a>
-  <a href="#" id="vojnaLinks1">Vojna Akademija 2</a>
-</div>
+
 
 <div id="frontVojna">
 
@@ -127,35 +128,14 @@
 
 <div class="mySlides fade">
   
-  <img src="images/livade.png" >
+  <img src="images/VA2.png" >
   
   
 </div>
 
 <div class="mySlides fade">
   
-  <img src="images/livade.png" >
-  
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="images/livade.png" >
-  
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="images/livade.png" >
-  
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="images/livade.png" >
+  <img src="images/VA.png" >
   
   
 </div>
@@ -163,19 +143,22 @@
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-
+<!--
 <div id="pagination" style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span>  
+  
+</div>
+-->
 </div>
 
+
+
 </div>
 
-
-
+<div class="vojnaLinks" align="center">
+  <a href="#" >Vojna Akademija 1</a>
+  <a href="#" id="vojnaLinks1">Vojna Akademija 2</a>
 </div>
 
 <div id="vojnaText">
@@ -325,11 +308,10 @@ sliku života i rada na Vojnoj akademiji.</p>
 
 <div class="allmenu1">
 <ul id="menu1">
-        <li>
-            <a href="index.html">POČETNA</a>  
+        <li class="active">
+            <a href="index.html">PO&#268;ETNA</a>  
         </li>
-        
-        <li id="newsLi"><a href="news.html">NOVOSTI</a>
+                <li id="newsLi"><a href="news.html">NOVOSTI</a>
         <ul>
                  <li>
                 <a href="vojna-akademija.html">Vojna akademija</a>
@@ -372,13 +354,20 @@ sliku života i rada na Vojnoj akademiji.</p>
          <li>
             <a href="clients.html">KLIJENTI</a>  
         </li>
+
           <li>
             <a href="contact.html">KONTAKTI</a>
          </li>
         
     </ul>
 </div>
+<div class="socials">
+<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
 </div>
+</div>
+
 </footer>
 <script src="js/kod.js"></script>
 <script src="js/toTop.js"></script>

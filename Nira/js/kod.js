@@ -29,8 +29,8 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-     fadeOut =  setTimeout(fading, 3000);
-      fadeIn = setTimeout(fadeIng, 5000);
+     /*fadeOut =  setTimeout(fading, 3000);
+      fadeIn = setTimeout(fadeIng, 5000);*/
       slides[i].style.display = "none";  
   }
   /*
@@ -46,8 +46,8 @@ function showSlides(n) {
 
 function StopFunction()
 {
-   clearTimeout(fadeOut);
-   clearTimeout(fadeIn);
+   /*clearTimeout(fadeOut);
+   clearTimeout(fadeIn);*/
    clearInterval(stp);
   
 

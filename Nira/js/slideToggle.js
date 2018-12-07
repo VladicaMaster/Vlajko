@@ -16,3 +16,9 @@ $(document).ready(function(){
         $(".girHeadline2").toggle('fast');
     });
 });
+
+$(document).ready(function(){
+    $("#but3").click(function(){
+        $(".girHeadline3").toggle('fast');
+    });
+});
